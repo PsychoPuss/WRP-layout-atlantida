@@ -1,0 +1,86 @@
+.gallery-filter {
+	text-align: center;
+
+	ul {
+		margin: 0 0 20px;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			padding: 5px 13px;
+			text-transform: uppercase;
+			cursor: pointer;
+			font-size: 13px;
+
+			a {
+				color: $text-color;
+			}
+		}
+	}
+}
+
+.gallery-filter-active {
+	color: $brand-color-primary;
+}
+
+.gallery {
+	min-height: 50vh;
+	max-width: calc($max-width * 2);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	//.gallery__item
+	&__item {
+		padding: 2px;
+
+		img {
+			object-fit: contain;
+			width: 100%;
+		}
+	}
+}
+
+.grid-sizer {
+	max-height: 0;
+	height: 0;
+	margin-bottom: 0;
+	display: block !important;
+}
+
+.grid-gutter-sizer {
+	max-height: 0;
+	height: 0;
+	width: 0;
+	display: block !important;
+}
+
+.gallery__item,
+.grid-sizer {
+	cursor: pointer;
+	transition: none;
+	display: block;
+
+	@include respond-to(xm) {
+		float: left;
+		width: 50%;
+	}
+	@include respond-to(md) {
+		width: 50%;
+	}
+	@include respond-to(lg) {
+		width: 33.33334%;
+	}
+	@include respond-to(xl) {
+		width: 25%;
+	}
+	@include respond-to(xxl) {
+		width: 20%;
+	}
+}

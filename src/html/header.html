@@ -1,0 +1,33 @@
+<header class="header">
+	<div class="header__logo">
+		<a href="/"><img src="@img/logo.svg" alt=""></a>
+	</div>
+	<nav role="navigation">
+		<input id="menu-toggle" class="menu-toggle" type="checkbox" />
+		<label class="hamburger-box" for="menu-toggle">
+			<div class="hamburger-inner"></div>
+		</label>
+		<div class="menu">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="/"@@home>Главная</a></li>
+				<li class="menu__item menu__item_childs"><a href="properties_all.html"@@all>Недвижимость</a>
+					<ul class="menu__list">
+						<li class="menu__item"><a href="properties_all.html">Вся недвижимость</a></li>
+						<li class="menu__item"><a href="#">Длинное название пункта меню</a></li>
+						<li class="menu__item"><a href="#">Пункт 3</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#">Услуги</a></li>
+				<li class="menu__item menu__item_childs"><a href="javascript:void(0)">Галерея</a>
+					<ul class="menu__list">
+						<li class="menu__item"><a href="gallery_photos.html">Галерея фото</a></li>
+						<li class="menu__item"><a href="gallery_videos.html">Галерея видео</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#">Новости</a></li>
+				<li class="menu__item"><a href="#">О нас</a></li>
+				<li class="menu__item"><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>

@@ -1,0 +1,67 @@
+.carousel-separator {
+	height: 52px;
+	opacity: 0.3;
+	background: url("@img/bgr_pattern.png") 26px 26px;
+}
+
+.block-start,
+.block-end {
+	max-width: calc($max-width / 2);
+	margin: 0 auto 20px;
+	text-align: center;
+
+	p {
+		line-height: 1.75;
+	}
+
+	@include when-inside(".container_wide") {
+		box-sizing: content-box;
+		padding-left: $min-padding;
+		padding-right: $min-padding;
+		@include respond-to(md) {
+			padding-left: $max-padding;
+			padding-right: $max-padding;
+		}
+	}
+}
+
+.block-start {
+	h1 {
+		margin: 8px 0 30px;
+	}
+	
+	p {
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+.block-end {
+	p {
+		font-size: 15px;
+		font-weight: 400;
+	}
+}
+
+.text-cols-2 {
+	display: flex;
+	flex-direction: column;
+	margin-left: -$min-padding;
+	margin-right: -$min-padding;
+	margin-bottom: 20px;
+
+	@include respond-to(md) {
+		flex-direction: row;
+	}
+
+	& > div {
+		font-size: 15px;
+		padding: 0 $min-padding;
+
+		@include respond-to(md) {
+			width: 50%;
+		}
+	}
+}
+
+

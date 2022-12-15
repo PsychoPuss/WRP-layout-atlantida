@@ -1,0 +1,152 @@
+// import Swiper and modules styles
+@import "~swiper/swiper";
+@import "~swiper/modules/navigation/navigation";
+@import "~swiper/modules/pagination/pagination";
+
+:root {
+	--swiper-theme-color: #{$color-brick};
+	--swiper-pagination-color: #{$color-brick};
+	--swiper-pagination-bullet-inactive-color: #ccc;
+	--swiper-pagination-bullet-inactive-opacity: 1;
+	@include respond-to(lg) {
+		--swiper-pagination-bullet-size: 13px;
+		--swiper-pagination-bullet-horizontal-gap: 6px;
+	}
+}
+
+.swiper {
+	.swiper-slide {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+.swiper-main {
+	width: 100%;
+	height: 80vh;
+
+	.swiper-slide {
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.slide-desc {
+		display: flex;
+		justify-content: center;
+		max-width: 700px;
+		&__wrapper {
+			margin-bottom: 64px;
+		}
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		color: $white;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: $white;
+	}
+}
+
+.swiper-3-per-row {
+	margin: 48px 0;
+
+	img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+
+		@include respond-to(sm) {
+			height: 270px;
+		}
+		@include respond-to(xm) {
+			height: 230px;
+		}
+		@include respond-to(md) {
+			height: 270px;
+		}
+		@include respond-to(lg) {
+			height: 230px;
+		}
+		@include respond-to(xl) {
+			height: 300px;
+		}
+	}
+
+	.slide-desc {
+		display: block;
+		width: 100%;
+	}
+}
+
+.swiper-wide {
+	margin: 48px 0;
+	padding-bottom: 35px;
+
+	img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+	}
+
+	@include respond-to(lg) {
+		padding-bottom: 0;
+
+		.swiper-pagination {
+			display: none;
+		}
+	}
+}
+
+.slide-desc {
+	text-align: center;
+
+	@include respond-to(lg) {
+		align-self: flex-start;
+		text-align: left;
+	}
+
+	@include respond-to(xxl) {
+		width: 25%;
+	}
+
+	&__wrapper {
+		background: $white;
+		padding: 8px 40px;
+	}
+
+	// .slide-desc__name
+	&__name {
+		color: $header-color;
+		margin: 0;
+		text-transform: uppercase;
+		line-height: 1.1;
+
+		@include unify-parent("h2") {
+			font-size: 30px;
+		}
+		@include unify-parent("h3") {
+			font-size: 22px;
+			font-weight: 600;
+		}
+	}
+	// .slide-desc__address
+	&__address {
+		color: $dark-grey-1;
+		text-transform: uppercase;
+		font-size: 15px;
+		margin: 5px 0;
+	}
+	// .slide-desc__price
+	&__price {
+		color: $header-color;
+	}
+}

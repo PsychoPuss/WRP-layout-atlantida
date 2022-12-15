@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title": "Главная"
+})
+<body>
+	@@include('html/header.html', {
+	"home": " class='active'",
+	"all": ""
+	})
+	@@include('html/swiper-main.html', {})
+
+	<div class="container">
+		<div class="content">
+
+			<div class="block-start">
+				<h1>Добро пожаловать</h1>
+				<p class="text-uppercase">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error reiciendis fuga iste! Quis nobis dolore, distinctio tempora, est corporis cupiditate assumenda explicabo dolorem sint repudiandae dicta tenetur possimus sit ipsam repellat ipsa amet accusamus. Quisquam quo architecto voluptatem aliquam.
+				</p>
+			</div>
+
+			<div class="text-cols-2">
+				<div>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate harum illo voluptatem similique vitae nesciunt quibusdam, eum debitis aut quam!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi id debitis praesentium officiis laboriosam itaque illum? Natus, laudantium alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi id debitis praesentium officiis laboriosam itaque illum? Natus, laudantium alias.</p>
+				</div>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam saepe pariatur consequatur tempora unde odit omnis! Ducimus quasi, provident hic neque quas dicta omnis. Voluptatum eaque odio tenetur ab amet. Harum, aperiam similique debitis natus distinctio reiciendis sed autem deleniti illo asperiores voluptates eum ratione? Alias inventore omnis, quisquam tenetur cumque explicabo saepe odio, error delectus nulla praesentium perferendis autem sequi animi maiores doloremque tempore voluptatibus culpa eaque eius unde. Reiciendis quo ipsam voluptatum, similique atque vitae, rem libero officia esse quos minus rerum? Dolor quod dolores officiis veniam. Nostrum perferendis adipisci sunt, quia voluptatibus cupiditate unde quae odit sint?</p>
+				</div>
+			</div>
+
+			<div class="flex-center">
+				<img src="@img/inhouse-gold-award-logo.png" alt="">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container bg-grey-light2">
+		<div class="content">
+
+			<div class="block-start">
+				<h2>Каталог недвижимости</h2>
+				<p class="text-uppercase">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error reiciendis fuga iste! Quis nobis dolore, distinctio tempora, est corporis cupiditate assumenda explicabo dolorem sint repudiandae dicta tenetur possimus sit ipsam repellat ipsa amet accusamus. Quisquam quo architecto voluptatem aliquam.
+				</p>
+			</div>
+
+			@@include('html/swiper-3-per-row.html', {})
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_default btn_wide">Больше недвижимости</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container container_wide">
+		<div class="content content_wide">
+
+			<div class="block-start">
+				<h2>THE ULTIMATE DESIGN & BUILD</h2>
+				<p class="text-uppercase">
+					When it comes to designing and building bespoke luxury homes, your ideas will always remain at the heart of everything we do. Our octagon bespoke division offers a fully managed design, planning and building service for all manner of custom projects.
+				</p>
+			</div>
+
+			@@include('html/swiper-wide.html', {})
+
+			<div class="block-end">
+				<p>
+					As well as exquisite exteriors, Octagon Interiors offers a comprehensive interior design service, whereby clients work directly with our in-house team to create a personalised scheme that mirrors the splendor of the exterior architecture, unlocking the full potential of each new home.
+				</p>
+			</div>
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_blue btn_wide">Узнать больше</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container bg-grey-light2">
+		<div class="content">
+
+			<div class="block-start">
+				<h2>Последние новости</h2>
+				<p class="text-uppercase">
+					The latest news from octagon developments
+				</p>
+			</div>
+
+			@@include('html/news-3-last.html', {})
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_default btn_wide">Больше новостей</a>
+			</div>
+			
+		</div>
+	</div>
+
+	@@include('html/footer.html', {})
+	@@include('html/svg.html', {})
+	@@include('html/scripts.html', {})
+</body>
+</html>

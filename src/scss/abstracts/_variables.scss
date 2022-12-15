@@ -1,0 +1,108 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Headers (serif) font family
+/// @type List
+$header-font-stack: "PT Serif", "Times New Roman", serif !default;
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Montserrat", "Helvetica", "Open Sans", "Arial", sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Monaco", monospace !default;
+
+/// Main brand color
+/// @type Color
+$brand-color-primary: #c45824 !default;  // b22222
+$brand-color-primary-lighten: #d37447;
+$color-brick: #b22222;
+// $brand-color-primary-darken: darken($brand-color-primary, 7%);
+// $brand-color-secondary: #00d5ff !default;
+// $brand-color-secondary-light: lighten($brand-color-secondary, 10%);
+// $brand-color-secondary-darken: darken($brand-color-secondary, 10%);
+
+/// Light grey
+/// @type Color
+$light-grey-1: #ededed;
+$light-grey-2: #f0f0f0;
+$light-grey-3: #f3f3f3;
+$light-grey-4: #f7f7f7;
+$light-grey-5: #ccc;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #e8e8e8;
+
+/// Dark grey
+/// @type Color
+$dark-grey-1: #6d6f72;
+$dark-grey-2: #666;
+$dark-grey-3: #565656;
+
+/// Copy text color
+/// @type Color
+$text-color: #565656 !default;
+$href-color: $brand-color-primary-lighten !default;
+$href-color-hover: #ebab8e !default;
+$header-color: $brand-color-primary;
+
+$text-grey-dark: $dark-grey-1;
+$text-green: $brand-color-primary;
+
+$href-footer: $brand-color-primary;
+$href-footer-hover: $href-color-hover;
+$href-footer-grey: $light-grey-5;
+
+$white: #fff;
+$black: #000;
+$red: $color-brick;
+$gold: #a69073;
+$gold-light: #cab386;
+$green-light: #ecf6ee;
+
+/// Buttons
+$btn-grey-light: #818a90; // submit
+$btn-grey: #5e6666;
+$btn-grey-dark: $dark-grey-3;
+$btn-blue: #19233e;
+$btn-green: $brand-color-primary; // submit hover
+$btn-green-light: $brand-color-primary-lighten; // others hover
+$social: #65767f;
+$social-hover: $brand-color-primary-lighten;
+
+$header-height-mobile: 71px;
+
+
+/// Container's maximum width + paddings
+/// @type Length
+$min-width: 320px !default;
+$max-width: 1400px !default;
+$min-padding: 15px !default;
+$max-padding: 30px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+	"xs": 320px,
+	"sm": 425px,
+	"xm": 577px,
+	"md": 768px,
+	"lg": 990px,
+	"xl": 1400px,
+	"xxl": 1900px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "/assets/" !default;
+
+
+/// icons base64
+$menu-arrow-grey: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCA1Ij48cGF0aCBmaWxsPSIjNGM0ZDRlIiBkPSJNOS45OTkuMzYxYS4zNDcuMzQ3IDAgMCAwLS4xMTQtLjI1NS40MS40MSAwIDAgMC0uNTUgMEw0Ljk5OSA0LjEyOS42NjQuMTA1YS40MTEuNDExIDAgMCAwLS41NSAwIC4zNDMuMzQzIDAgMCAwIDAgLjUxbDQuNjExIDQuMjc4YS40MS40MSAwIDAgMCAuNTUgMEw5Ljg4Ni42MTVhLjM0Ny4zNDcgMCAwIDAgLjExMy0uMjU0WiIgZGF0YS1uYW1lPSJQYXRoIDEiLz48L3N2Zz4=";
+$menu-arrow-white: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCA1Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNOS45OTkuMzYxYS4zNDcuMzQ3IDAgMCAwLS4xMTQtLjI1NS40MS40MSAwIDAgMC0uNTUgMEw0Ljk5OSA0LjEyOS42NjQuMTA1YS40MTEuNDExIDAgMCAwLS41NSAwIC4zNDMuMzQzIDAgMCAwIDAgLjUxbDQuNjExIDQuMjc4YS40MS40MSAwIDAgMCAuNTUgMEw5Ljg4Ni42MTVhLjM0Ny4zNDcgMCAwIDAgLjExMy0uMjU0WiIgZGF0YS1uYW1lPSJQYXRoIDEiLz48L3N2Zz4=";

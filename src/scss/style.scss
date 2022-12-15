@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import 'abstracts/variables',
+		'abstracts/functions',
+		'abstracts/mixins';
+
+// 2. Vendors
+@import 'vendors/normalize',
+		'vendors/reset',
+		'vendors/swiper',
+		"~@fancyapps/ui/dist/fancybox";
+
+// 3. Base stuff
+@import 'base/base',
+		'base/fonts',
+		'base/grid',
+		'base/typography',
+		'base/helpers';
+
+// 4. Layout-related sections
+@import 'layout/header',
+		'layout/nav',
+		'layout/main',
+		'layout/news',
+		'layout/property-list',
+		'layout/gallery',
+		'layout/footer';
+
+// 5. Components
+@import 'components/nav-mobile',
+		'components/form',
+		'components/button';
+
+// 6. Page-specific styles
+@import 'pages/home';
+
+// 7. Themes
+@import 'themes/default';

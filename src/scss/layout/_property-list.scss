@@ -1,0 +1,103 @@
+.property-list {
+	margin: 40px 0;
+	display: grid;
+	gap: 6px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+	// .property-list_white
+	&_white {
+	}
+
+	@include respond-to(xl) {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+
+	// .property-list__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .property-list__link
+	&__link {
+		width: 100%;
+		position: relative;
+
+		img {
+			height: 280px;
+			width: 100%;
+			object-fit: cover;
+
+			@include respond-to(xm) {
+				height: 300px;
+			}
+			@include respond-to(md) {
+				height: 250px;
+			}
+			@include respond-to(xl) {
+				height: 300px;
+			}
+		}
+	}
+	// .property-list__desc
+	&__desc {
+		padding: 0.5rem 1rem;
+		background: $light-grey-3;
+		flex: 1;
+		display: flex;
+
+		@include when-inside('.property-list_white') {
+			background: $white;
+		}
+	}
+}
+
+.property-list-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+
+	// .property-list-desc__name
+	&__name {
+		color: $header-color;
+		margin: 0;
+		text-transform: uppercase;
+		line-height: 1.1;
+
+		@include respond-to(md) {
+			@include respond-to(lg, "max") {
+				font-size: 1rem;
+			}
+		}
+	}
+	// .property-list-desc__address
+	&__address {
+		color: $dark-grey-1;
+		text-transform: uppercase;
+		font-size: 15px;
+		margin: 5px 0;
+	}
+	// .property-list-desc__price
+	&__price {
+		color: $header-color;
+
+		@include respond-to(md) {
+			@include respond-to(lg, "max") {
+				// font-size: 0.875rem;
+			}
+		}
+	}
+}
+
+.property-list-map {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	a {
+		display: block;
+		height: 30px;
+	}
+}

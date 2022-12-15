@@ -1,0 +1,154 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+	color: $dark-grey-1;
+	padding-bottom: 0;
+	flex: 0;
+
+	& > div {
+		display: flex;
+		justify-content: center;
+	}
+
+	a {
+		@include on-event {
+			color: $href-footer-hover;
+		}
+	}
+	// .footer__logo
+	&__logo {
+		margin-bottom: 1rem;
+
+		img {
+			width: 190px;
+		}
+	}
+	// .footer__contacts
+	&__contacts {
+		ul {
+			list-style-type: none;
+			margin: 0 0 1rem;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			font-size: 20px;
+		}
+	}
+	// .footer__social
+	&__social {
+		margin-bottom: 1.75rem;
+	}
+	// .footer__newsletter
+	&__newsletter {
+		margin-bottom: 1.35rem;
+	}
+	// .footer__menu
+	&__menu {
+		font-size: 13px;
+		margin-bottom: 1rem;
+	}
+	// .footer__menu-list
+	&__menu-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	// .footer__menu-item
+	&__menu-item {
+		padding: 0;
+		margin: 0;
+
+		&:not(:last-child)::after {
+			content: "|";
+			display: inline-block;
+			width: 11px;
+			text-align: center;
+		}
+	}
+	// .footer__copyright
+	&__copyright {
+		font-size: 11px;
+		text-align: center;
+		margin-bottom: 1.75rem;
+	}
+	// .footer__nav
+	&__nav {
+		margin-top: 1.75rem;
+	}
+	// .footer__nav-list
+	&__nav-list {
+		background: $dark-grey-2;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 10px 12px 8px !important;
+
+		flex-basis: calc(100% + $min-padding + $min-padding);
+		margin-left: -$min-padding !important;
+		margin-right: -$min-padding !important;
+
+		@include respond-to(md) {
+			flex-basis: calc(100% + $max-padding + $max-padding);
+			margin-left: -$max-padding !important;
+			margin-right: -$max-padding !important;
+		}
+	}
+	// .footer__nav-item
+	&__nav-item {
+		margin: 0;
+		padding: 5px 12px;
+		font-size: 12px;
+		font-family: $header-font-stack;
+
+		a {
+			color: $href-footer-grey;
+			text-transform: uppercase;
+
+			@include on-event {
+				color: $white;
+			}
+		}
+	}
+}
+.social-list {
+	display: flex;
+}
+.social-item {
+	padding: 0 4px;
+	margin: 0;
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		background: $social;
+
+		@include on-event {
+			background: $social-hover;
+		}
+
+		svg {
+			display: block;
+			width: 1rem;
+			height: 1rem;
+			fill: $white;
+		}
+	}
+}
+
+.svg-sprite {
+	display: block;
+	width: 0;
+	height: 0;
+}

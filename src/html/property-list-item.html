@@ -1,0 +1,26 @@
+
+<div class="property-list__item">
+	<a href="#" class="property-list__link">@@if(sold) {<div class="tag tag_sold">Продано</div>}
+		<img src="@img/@@image" alt="">
+	</a>
+	<div class="property-list__desc">
+		<div class="property-list-desc">
+			<h3 class="property-list-desc__name">
+				<a href="#">@@name</a>
+			</h3>
+			<div class="property-list-desc__address">
+				@@address
+			</div>
+			<div class="property-list-desc__price">
+				@@price
+			</div>
+		</div>
+		<div class="property-list-map">
+			<a href="#">
+				<svg class="map-pointer">
+					<use xlink:href="#map-pointer"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+</div>

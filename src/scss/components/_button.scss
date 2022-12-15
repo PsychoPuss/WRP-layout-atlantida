@@ -1,0 +1,39 @@
+.btn {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1.4;
+	padding: 9px 16px 7px;
+	border: 0;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+
+	// .btn_wide
+	&_wide {
+		@include respond-to(md) {
+			min-width: 14rem;
+		}
+	}
+
+	// .btn_default
+	&_default {
+		background: $btn-grey;
+		color: $white;
+
+		@include on-event {
+			background: $brand-color-primary-lighten;
+			color: $white;
+		}
+	}
+
+	// .btn_blue
+	&_blue {
+		background: $btn-blue;
+		color: $white;
+
+		@include on-event {
+			background: $btn-grey;
+			color: $white;
+		}
+	}
+}
