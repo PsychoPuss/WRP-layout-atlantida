@@ -2,7 +2,7 @@ import * as functions from "./modules/functions.js";
 functions.bindStickyHeader();
 
 const swiperMainCarousel = new Swiper(".swiper.swiper-main", {
-	loop: true,
+	loop: false,
 	pagination: {
 		el: ".swiper-main .swiper-pagination",
 		clickable: true,
