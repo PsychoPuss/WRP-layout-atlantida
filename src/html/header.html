@@ -9,24 +9,29 @@
 		</label>
 		<div class="menu">
 			<ul class="menu__list">
-				<li class="menu__item"><a href="/"@@home>Главная</a></li>
-				<li class="menu__item menu__item_childs"><a href="properties_all.html"@@all>Недвижимость</a>
+				<li class="menu__item"><a href="/"@@if(context.home){ class="active"}>Главная</a></li>
+				<li class="menu__item menu__item_childs"><a href="properties_all.html"@@if(context.properties || context.properties_london || context.properties_mansion){ class="active"}>Недвижимость</a>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="properties_all.html">Вся недвижимость</a></li>
-						<li class="menu__item"><a href="#">Длинное название пункта меню</a></li>
-						<li class="menu__item"><a href="#">Пункт 3</a></li>
+						<li class="menu__item"><a href="properties_all.html"@@if(context.properties_all){ class="active"}>Вся недвижимость</a></li>
+						<li class="menu__item"><a href="properties_london.html"@@if(context.properties_london){ class="active"}>London properties</a></li>
+						<li class="menu__item"><a href="properties_mansion.html"@@if(context.properties_mansion){ class="active"}>Luxury mansions</a></li>
 					</ul>
 				</li>
-				<li class="menu__item"><a href="#">Услуги</a></li>
-				<li class="menu__item menu__item_childs"><a href="javascript:void(0)">Галерея</a>
+				<li class="menu__item menu__item_childs"><a href="javascript:void(0)">Услуги</a>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="gallery_photos.html">Галерея фото</a></li>
-						<li class="menu__item"><a href="gallery_videos.html">Галерея видео</a></li>
+						<li class="menu__item"><a href="index.html"@@if(context.service_1){ class="active"}>Услуга 1</a></li>
+						<li class="menu__item"><a href="index.html"@@if(context.service_2){ class="active"}>Услуга 2</a></li>
 					</ul>
 				</li>
-				<li class="menu__item"><a href="#">Новости</a></li>
-				<li class="menu__item"><a href="#">О нас</a></li>
-				<li class="menu__item"><a href="#">Контакты</a></li>
+				<li class="menu__item menu__item_childs"><a href="gallery_photos.html"@@if(context.gallery_photos || context.gallery_videos){ class="active"}>Галерея</a>
+					<ul class="menu__list">
+						<li class="menu__item"><a href="gallery_photos.html"@@if(context.gallery_photos){ class="active"}>Галерея фото</a></li>
+						<li class="menu__item"><a href="gallery_videos.html"@@if(context.gallery_videos){ class="active"}>Галерея видео</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="news.html"@@if(context.news){ class="active"}>Новости</a></li>
+				<li class="menu__item"><a href="about.html"@@if(context.about){ class="active"}>О нас</a></li>
+				<li class="menu__item"><a href="contacts.html"@@if(context.contacts){ class="active"}>Контакты</a></li>
 			</ul>
 		</div>
 	</nav>

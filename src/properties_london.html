@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title": "London properties"
+})
+<body>
+	@@include('html/header.html', {
+	"properties_london": true,
+	})
+	@@include('html/swiper-main-property.html', {})
+
+	<div class="container">
+		<div class="content">
+
+			<div class="block-start">
+				<h1>Luxury Properties for Sale In London</h1>
+			</div>
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_default btn_wide">Больше недвижимости</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container container_wide bg-grey-light2">
+		<div class="content content_wide">
+
+			<div class="block-start">
+				<h2>Property Locations</h2>
+			</div>
+
+			<!-- map -->
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="content">
+
+			<div class="block-start">
+				<h2>Living In London</h2>
+				<p class="text-uppercase">
+					Demand for luxury property in London is as high as ever, and this is because the city can truly deliver something for everyone.
+				</p>
+			</div>
+
+			<!-- на октагоне сделано именно так, другого способа оформить эту секцию как у них — нет -->
+
+			<!-- этот блок показывается только от 990px (3 картинки как заголовки колонок) -->
+			<div class="text-cols-3 text-cols-3_images visible-lg">
+				<!-- меньше 3 картинок можно. больше — только 5 или 6 из-за особенностей заполнения колонок (4 будет некрасиво)-->
+				<img src="@img/news-1.jpg" alt="">
+				<img src="@img/news-4.jpg" alt="">
+				<img src="@img/news-3.jpg" alt="">
+			</div>
+
+			<!-- картинки в тексте отображаются только в моб версии, чтобы разбавить полотно текста. их нужно вставлять в саму статью -->
+			<article class="text-cols-3 hidden-img-lg">
+				<img src="@img/news-1.jpg" alt="">
+				<p>From the elegance of Belgravia, Mayfair and the West End to the village vibes of Primrose Hill, Little Village and Hampstead, the capital offers a refreshingly eclectic mix of places to call home. And the sheer variety of residences available in London guarantee that even the most discerning individuals are bound to find their dream property here.</p>
+				<p>London is an attractive option for both domestic and international investors searching for premium quality houses, apartments and mansions in one of the world’s most important cities. As well as offering an enviable selection of luxury homes in a series of key locations, London’s boroughs offer plenty of things to do for families, young professionals and retirees alike. Those calling London home are of course just a short train ride away from all the city’s world-famous historical landmarks, including Big Ben, the Tower of London and Buckingham Palace. The British Museum, along with the plethora of other places of interest that line the streets of Kensington and nearby Covent Garden, are worth a visit if you’re new to the area, while the South Bank is arguably the city’s cultural hub, offering world-class events and exhibitions against the impressive backdrop of the River Thames. Stratford, an area that received huge investment thanks to the London 2012 Olympic Games, is home to the world’s tallest and longest tunnel slide, along with the famed Westfield Shopping Centre.</p>
+				<img src="@img/news-4.jpg" alt="">
+				<p>Landmarks aside, the city’s pubs, bars, restaurants, venues and leisure centres will satisfy the needs of active socialites and those keen to make the most of their free time. Those who invest in a luxury property in London are just miles from some of the UK’s busiest air terminals at Heathrow, Gatwick, Luton, Stansted, Southend and City Airport, and are therefore perfectly placed for international travel.</p>
+				<p>Schools in the area are rated as some of the best in the country, too, with institutions such as Queen Elizabeth’s School in Barnet and Wallington County Grammar School in Sutton having been graded as outstanding by independent authorities. The boroughs rated the best in terms of academic achievement include Sutton, Kingston, Barnet, Richmond, and Kensington and Chelsea. Some of the country’s best known grammar schools and boarding schools are well within reach of the capital, too.</p>
+				<p>You can view all our luxury homes for sale in London in the gallery on this page. All the luxury developments on offer from Octagon combine expert craftsmanship with distinctive styling, resulting in houses, flats and apartments of exceptional quality and instantly recognisable design.</p>
+				<img src="@img/news-3.jpg" alt="">
+				<p>Click on each London property for detailed descriptions, full specifications and more information on nearby amenities, schools and recreational facilities.</p>
+			</article>
+
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_default btn_wide">Связаться с нами</a>
+			</div>
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="fz24">020 8481 7500</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container bg-grey-light2">
+		<div class="content">
+
+			<div class="block-start">
+				<h2>Каталог недвижимости</h2>
+				<p class="text-uppercase">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error reiciendis fuga iste! Quis nobis dolore, distinctio tempora, est corporis cupiditate assumenda explicabo dolorem sint repudiandae dicta tenetur possimus sit ipsam repellat ipsa amet accusamus. Quisquam quo architecto voluptatem aliquam.
+				</p>
+			</div>
+
+			@@include('html/swiper-1-per-row.html', {})
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_default btn_wide">Больше недвижимости</a>
+			</div>
+
+		</div>
+	</div>
+
+	@@include('html/footer.html', {})
+	@@include('html/svg.html', {})
+	@@include('html/scripts.html', {})
+</body>
+</html>

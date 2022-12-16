@@ -13,6 +13,21 @@ const swiperMainCarousel = new Swiper(".swiper.swiper-main", {
 	},
 });
 
+const swiper1PerRowCarousel = new Swiper(".swiper.swiper-1-per-row", {
+	autoplay: {
+		delay: 3000,
+		pauseOnMouseEnter: true,
+		disableOnInteraction: false,
+	},
+	loop: true,
+	slidesPerView: 1,
+	spaceBetween: 50,
+	pagination: {
+		el: ".swiper-1-per-row .swiper-pagination",
+		clickable: true,
+	},
+});
+
 const swiper3PerRowCarousel = new Swiper(".swiper.swiper-3-per-row", {
 	autoplay: {
 		delay: 3000,
