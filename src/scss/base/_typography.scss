@@ -179,7 +179,7 @@ h6 {
 
 a {
 	@extend %text-links;
-	transition: all 0.25s ease-in-out;
+	transition: $transition-default;
 }
 
 p {

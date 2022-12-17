@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Галерея фото</title>
+	<title>Услуга 3</title>
 </head>
 
 <body>
@@ -36,12 +36,12 @@
 						<ul class="menu__list">
 							<li class="menu__item"><a href="services_1.html">Услуга 1</a></li>
 							<li class="menu__item"><a href="services_2.html">Услуга 2</a></li>
-							<li class="menu__item"><a href="services_land.html">Land</a></li>
+							<li class="menu__item"><a href="services_land.html" class="active">Land</a></li>
 						</ul>
 					</li>
-					<li class="menu__item menu__item_childs"><a href="gallery_photos.html" class="active">Галерея</a>
+					<li class="menu__item menu__item_childs"><a href="gallery_photos.html">Галерея</a>
 						<ul class="menu__list">
-							<li class="menu__item"><a href="gallery_photos.html" class="active">Галерея фото</a></li>
+							<li class="menu__item"><a href="gallery_photos.html">Галерея фото</a></li>
 							<li class="menu__item"><a href="gallery_videos.html">Галерея видео</a></li>
 						</ul>
 					</li>
@@ -53,74 +53,105 @@
 		</nav>
 	</header>
 
+	<div class="swiper swiper-main">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide swiper-slide_overlay">
+				<a href="#">
+					<video autoplay="" muted="" loop="">
+						<source src="https://www.octagon.co.uk/wp-content/uploads/2020/12/Octagon-Land-required-hi-res-comp-new.mp4" type="video/mp4">
+					</video>
+				</a>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+
+	<div class="carousel-separator"></div>
+
+
 	<div class="container">
+		<div class="content">
 
-		<div class="block-start">
-			<h1>Octagon gallery</h1>
-			<div class="text-uppercase">
-				<p>
-					Attention to detail is our hallmark. we are proud of our reputation for exquisite detailing, exemplary interior craftsmanship and an exceptional finish that we achieve throughout each property.
-				</p>
+			<div class="block-start">
+				<h1>Land required</h1>
+				<div class="text-uppercase">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et iusto officiis enim eligendi inventore odit quibusdam ex sint vitae quos quam laudantium ipsum, itaque illo.</p>
+					<p>Earum nostrum nemo, quae magni mollitia voluptatem aut eius accusantium, sit cupiditate distinctio facere minima.</p>
+				</div>
 			</div>
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_default btn_wide">Больше недвижимости</a>
+			</div>
+
 		</div>
+	</div>
 
-		<nav class="gallery-filter">
-			<ul>
-				<li data-filter=".gallery__item" class="gallery-filter-active">Всё</li>
-				<li data-filter=".album-interior">Интерьер</li>
-				<li data-filter=".album-exterior">Экстерьер</li>
-				<li data-filter=".album-bathroom">Ванная</li>
-				<li data-filter=".album-bedroom">Спальня</li>
-			</ul>
-		</nav>
+	<div class="container container_wide">
+		<div class="content content_wide">
 
-		<div class="gallery">
-			<div class="grid-sizer"></div>
-			<div class="grid-gutter-sizer"></div>
-			<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior">
-				<img src="https://source.unsplash.com/random/500x360/?interior" alt="">
+			<div class="services bg-grey-light4">
+				<div class="services__row">
+					<div class="service">
+						<h2>Sell your land for development</h2>
+						<p>Our focus is to identify suitable land for residential schemes. The expertise and skill of our in-house team of planners and architects allows us to design and build spectacular developments that add considerable value to the area and optimize land value for the land owner.</p>
+						<p>When it comes to sourcing and buying land, we understand that effective collaboration is key to our success. In addition to working with landowners directly, we also liaise with land agents. We recognise and generously reward effective land introductions and where appropriate, will re-instruct agents with new home sales.</p>
+					</div>
+					<div class="service parallax">
+						<div class="parallax__wrapper">
+							<div class="parallax__bg" style="background-image: url(img/swiper-main-carousel-1.jpg);"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="services__row">
+					<div class="service parallax">
+						<div class="parallax__wrapper">
+							<div class="parallax__bg" style="background-image: url(img/swiper-main-carousel-2.jpg);"></div>
+						</div>
+					</div>
+					<div class="service">
+						<h2>Sell your land for development</h2>
+						<p>Our focus is to identify suitable land for residential schemes. The expertise and skill of our in-house team of planners and architects allows us to design and build spectacular developments that add considerable value to the area and optimize land value for the land owner.</p>
+						<p>When it comes to sourcing and buying land, we understand that effective collaboration is key to our success. In addition to working with landowners directly, we also liaise with land agents. We recognise and generously reward effective land introductions and where appropriate, will re-instruct agents with new home sales.</p>
+						<p>When it comes to sourcing and buying land, we understand that effective collaboration is key to our success. In addition to working with landowners directly, we also liaise with land agents. We recognise and generously reward effective land introductions and where appropriate, will re-instruct agents with new home sales.</p>
+					</div>
+				</div>
+
+				<div class="services__row">
+					<div class="service">
+						<h2>Sell your land for development</h2>
+						<p>Our focus is to identify suitable land for residential schemes. The expertise and skill of our in-house team of planners and architects allows us to design and build spectacular developments that add considerable value to the area and optimize land value for the land owner.</p>
+						<p>When it comes to sourcing and buying land, we understand that effective collaboration is key to our success. In addition to working with landowners directly, we also liaise with land agents. We recognise and generously reward effective land introductions and where appropriate, will re-instruct agents with new home sales.</p>
+						<p>Our focus is to identify suitable land for residential schemes. The expertise and skill of our in-house team of planners and architects allows us to design and build spectacular developments that add considerable value to the area and optimize land value for the land owner.</p>
+						<p>When it comes to sourcing and buying land, we understand that effective collaboration is key to our success. In addition to working with landowners directly, we also liaise with land agents. We recognise and generously reward effective land introductions and where appropriate, will re-instruct agents with new home sales.</p>
+					</div>
+					<div class="service parallax">
+						<div class="parallax__wrapper">
+							<div class="parallax__bg" style="background-image: url(img/swiper-main-carousel-3.jpg);"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="services__row">
+					<div class="service parallax">
+						<div class="parallax__wrapper">
+							<div class="parallax__bg" style="background-image: url(img/swiper-main-carousel-1.jpg);"></div>
+						</div>
+					</div>
+					<div class="service">
+						<h2>FOR MORE INFORMATION</h2>
+						<p>Please contact Andy Cook or Will Simons to discuss relevant opportunities.<br />Your confidentiality is guaranteed.</p>
+						<p><strong>Andy Cook, Land Director – </strong><a href="tel:">07733 105978</a> / <a href="mailto:">andyc@octagon.co.uk</a></p>
+						<p><strong>Will Simons, Land Director – </strong><a href="tel:">07793 269 816</a> / <a href="mailto:">wills@octagon.co.uk</a></p>
+						<p><a href="tel:" class="btn btn_default">Call us now</a></p>
+					</div>
+				</div>
 			</div>
-			<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior">
-				<img src="https://source.unsplash.com/random/500x360/?exterior" alt="">
-			</div>
-			<div class="gallery__item album-interior album-bathroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bathroom">
-				<img src="https://source.unsplash.com/random/500x360/?bathroom" alt="">
-			</div>
-			<div class="gallery__item album-interior album-bedroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bedroom">
-				<img src="https://source.unsplash.com/random/500x360/?bedroom" alt="">
-			</div>
-			<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior&v2">
-				<img src="https://source.unsplash.com/random/500x360/?interior&v2" alt="">
-			</div>
-			<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior&v2">
-				<img src="https://source.unsplash.com/random/500x360/?exterior&v2" alt="">
-			</div>
-			<div class="gallery__item album-interior album-bathroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bathroom&v2">
-				<img src="https://source.unsplash.com/random/500x360/?bathroom&v2" alt="">
-			</div>
-			<div class="gallery__item album-interior album-bedroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bedroom&v2">
-				<img src="https://source.unsplash.com/random/500x360/?bedroom&v2" alt="">
-			</div>
-			<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior&v3">
-				<img src="https://source.unsplash.com/random/500x360/?interior&v3" alt="">
-			</div>
-			<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior&v3">
-				<img src="https://source.unsplash.com/random/500x360/?exterior&v3" alt="">
-			</div>
-			<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior&v4">
-				<img src="https://source.unsplash.com/random/500x360/?interior&v4" alt="">
-			</div>
-			<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior&v4">
-				<img src="https://source.unsplash.com/random/500x360/?exterior&v4" alt="">
-			</div>
-			<div class="gallery__item album-interior album-bathroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bathroom&v4">
-				<img src="https://source.unsplash.com/random/500x360/?bathroom&v4" alt="">
-			</div>
-			<div class="gallery__item album-interior album-bedroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bedroom&v4">
-				<img src="https://source.unsplash.com/random/500x360/?bedroom&v4" alt="">
-			</div>
+
 		</div>
-
 	</div>
 
 	<footer class="container footer">
