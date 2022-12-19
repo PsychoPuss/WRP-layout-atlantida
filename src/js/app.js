@@ -3,6 +3,7 @@ functions.stickyHeader();
 functions.swipersInit();
 functions.isotopeInit();
 functions.parallaxInit();
+functions.careersTop();
 
 
 

@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Image gallery</title>
+	<title>About company</title>
 </head>
 
 <body>
@@ -39,17 +39,17 @@
 							<li class="menu__item"><a href="services_land.html">Land</a></li>
 						</ul>
 					</li>
-					<li class="menu__item menu__item_childs"><a href="gallery_photos.html" class="active">Gallery</a>
+					<li class="menu__item menu__item_childs"><a href="gallery_photos.html">Gallery</a>
 						<ul class="menu__list">
-							<li class="menu__item"><a href="gallery_photos.html" class="active">Image gallery</a></li>
+							<li class="menu__item"><a href="gallery_photos.html">Image gallery</a></li>
 							<li class="menu__item"><a href="gallery_videos.html">Video gallery</a></li>
 						</ul>
 					</li>
 					<li class="menu__item"><a href="news-list.html">News</a></li>
-					<li class="menu__item menu__item_childs"><a href="about_company.html">About us</a>
+					<li class="menu__item menu__item_childs"><a href="about_company.html" class="active">About us</a>
 						<ul class="menu__list">
 							<li class="menu__item"><a href="about_careers.html">Careers</a></li>
-							<li class="menu__item"><a href="about_company.html">Company</a></li>
+							<li class="menu__item"><a href="about_company.html" class="active">Company</a></li>
 							<li class="menu__item"><a href="about_awards.html">Awards</a></li>
 						</ul>
 					</li>
@@ -59,72 +59,56 @@
 		</nav>
 	</header>
 
+	<div class="swiper swiper-main">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background-image: url(img/swiper-main-about.jpg);"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
 
-	<div class="container container_wide">
-		<div class="content content_wide">
+	<div class="carousel-separator"></div>
+
+	<div class="container">
+		<div class="content">
 
 			<div class="text-block text-uppercase">
-				<h1>Gallery</h1>
+				<h1>Mansions for Sale</h1>
 				<p>
-					Attention to detail is our hallmark. we are proud of our reputation for exquisite detailing, exemplary interior craftsmanship and an exceptional finish that we achieve throughout each property.
+					If a luxury new home is on your property wish list, speak to the team here at Octagon. We have many years’ experience in designing and building dream luxury mansions for clients who expect intuitive design, world-class craftsmanship and an exceptional finish from their chosen developers.
 				</p>
 			</div>
 
-			<nav class="nav-filter">
-				<ul>
-					<li data-filter=".gallery__item" class="nav-filter-active">All</li>
-					<li data-filter=".album-interior">Interior</li>
-					<li data-filter=".album-exterior">Exterior</li>
-					<li data-filter=".album-bathroom">Bathroom</li>
-					<li data-filter=".album-bedroom">Bedroom</li>
-				</ul>
-			</nav>
+			<div class="block-cols-2">
+				<div>
+					<h2>Our Luxury Mansions</h2>
+					<p>We primarily focus on developing luxury mansions in London and the Home Counties. Our collection boasts incredible properties in some of the South East’s most sought-after locations inside the M25, and we regularly secure opportunities in exclusive pockets of Surrey, Berkshire and Hampshire.</p>
+					<p>Ever keen to cater for our buyers’ precise build requirements, we often source plots with planning permission for dwellings of particular sizes and specifications.</p>
+					<p>When searching for the perfect plot, we take a range of factors into consideration. We understand that our clients are often looking for modern, high spec comforts in a quiet, private setting, which is why we often develop luxury mansions in or close to quaint villages and rural locations within the region. We unearth development opportunities that appeal to professional commuters and young families; as such, we often favour locations that offer fast, convenient links into central London.</p>
+				</div>
+				<div>
+					<h2>Why Choose Octagon?</h2>
+					<p>Since our inception over 40 years ago, we have developed a distinctive style that simply cannot be replicated by other luxury home builders.</p>
+					<p>We furnish classic designs with unique features to give our luxury mansions true character, and we make good use of energy-saving features to ensure our work is reassuringly eco-friendly.</p>
+					<p>Our talented team of designers and architects have won countless awards for their work and are known within the industry for their technical expertise and unwavering creativity.</p>
+					<p>Octagon Bespoke, our sister division, specialises in creating mansions and so-called ‘super mansions’ for clients who have their own clear vision.</p>
+					<p>With Octagon, anything is possible. Typical builds range from £1.2m to £20m+. Contact us today to discuss any one of the luxury mansions listed here, or to share your ideas with our dedicated team.</p>
+				</div>
+			</div>
 
-			<div class="gallery">
-				<div class="grid-sizer"></div>
-				<div class="grid-gutter-sizer"></div>
-				<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior">
-					<img src="https://source.unsplash.com/random/500x360/?interior" alt="">
-				</div>
-				<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior">
-					<img src="https://source.unsplash.com/random/500x360/?exterior" alt="">
-				</div>
-				<div class="gallery__item album-interior album-bathroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bathroom">
-					<img src="https://source.unsplash.com/random/500x360/?bathroom" alt="">
-				</div>
-				<div class="gallery__item album-interior album-bedroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bedroom">
-					<img src="https://source.unsplash.com/random/500x360/?bedroom" alt="">
-				</div>
-				<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior&v2">
-					<img src="https://source.unsplash.com/random/500x360/?interior&v2" alt="">
-				</div>
-				<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior&v2">
-					<img src="https://source.unsplash.com/random/500x360/?exterior&v2" alt="">
-				</div>
-				<div class="gallery__item album-interior album-bathroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bathroom&v2">
-					<img src="https://source.unsplash.com/random/500x360/?bathroom&v2" alt="">
-				</div>
-				<div class="gallery__item album-interior album-bedroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bedroom&v2">
-					<img src="https://source.unsplash.com/random/500x360/?bedroom&v2" alt="">
-				</div>
-				<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior&v3">
-					<img src="https://source.unsplash.com/random/500x360/?interior&v3" alt="">
-				</div>
-				<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior&v3">
-					<img src="https://source.unsplash.com/random/500x360/?exterior&v3" alt="">
-				</div>
-				<div class="gallery__item album-interior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?interior&v4">
-					<img src="https://source.unsplash.com/random/500x360/?interior&v4" alt="">
-				</div>
-				<div class="gallery__item album-exterior" data-fancybox data-src="https://source.unsplash.com/random/500x360/?exterior&v4">
-					<img src="https://source.unsplash.com/random/500x360/?exterior&v4" alt="">
-				</div>
-				<div class="gallery__item album-interior album-bathroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bathroom&v4">
-					<img src="https://source.unsplash.com/random/500x360/?bathroom&v4" alt="">
-				</div>
-				<div class="gallery__item album-interior album-bedroom" data-fancybox data-src="https://source.unsplash.com/random/500x360/?bedroom&v4">
-					<img src="https://source.unsplash.com/random/500x360/?bedroom&v4" alt="">
-				</div>
+		</div>
+	</div>
+
+	<div class="container container_wide bg-grey-light2">
+		<div class="content content_wide">
+
+			<div class="text-block">
+				<h2>Octagon Properties For Sale</h2>
+			</div>
+
+			<div class="flex-center">
+				<a href="javascript:void(0)" class="btn btn_default btn_wide">View more properties</a>
 			</div>
 
 		</div>

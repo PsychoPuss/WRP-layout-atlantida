@@ -31,7 +31,13 @@
 					</ul>
 				</li>
 				<li class="menu__item"><a href="news-list.html"@@if(context.newslist || context.newsitem){ class="active"}>News</a></li>
-				<li class="menu__item"><a href="about.html"@@if(context.about){ class="active"}>About us</a></li>
+				<li class="menu__item menu__item_childs"><a href="about_company.html"@@if(context.company || context.careers || context.awards){ class="active"}>About us</a>
+					<ul class="menu__list">
+						<li class="menu__item"><a href="about_careers.html"@@if(context.careers){ class="active"}>Careers</a></li>
+						<li class="menu__item"><a href="about_company.html"@@if(context.company){ class="active"}>Company</a></li>
+						<li class="menu__item"><a href="about_awards.html"@@if(context.awards){ class="active"}>Awards</a></li>
+					</ul>
+				</li>
 				<li class="menu__item"><a href="contacts.html"@@if(context.contacts){ class="active"}>Contact us</a></li>
 			</ul>
 		</div>

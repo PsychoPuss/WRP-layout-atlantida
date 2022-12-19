@@ -102,6 +102,17 @@ export function isotopeInit() {
 	// isotopeGallery();
 }
 
+export function careersTop() {
+	let careersTopOffset = () => {
+		const div = document.querySelector(".gallery-careers"),
+			header = document.querySelector("header");
+		div.style.marginTop = `${header.offsetHeight - 125}px`;
+	};
+	window.addEventListener("load", careersTopOffset);
+	window.addEventListener("resize", careersTopOffset);
+	careersTopOffset();
+}
+
 export function swipersInit() {
 	const swiperMainCarousel = new Swiper(".swiper.swiper-main", {
 		loop: false,
