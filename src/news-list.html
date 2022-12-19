@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "News list"
+})
+<body>
+	@@include('html/header.html', {
+	"newslist": true,
+	})
+
+	<div class="container container_wide container_short">
+		<div class="content content_wide">
+
+			<div class="text-block">
+				<h1>Octagon news</h1>
+				<div class="text-uppercase">
+					<p>
+						All the latest news and information from octagon developments.
+					</p>
+				</div>
+			</div>
+
+			<nav class="nav-filter">
+				<ul>
+					<li class="nav-filter-active"><a href="#">2022</a></li>
+					<li><a href="#">2021</a></li>
+					<li><a href="#">2020</a></li>
+				</ul>
+			</nav>
+
+			<div class="news-list bg-grey-light4">
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<h2>Interior trends to look out for in 2023</h2>
+						<p>08/12/2022</p>
+						<p>On colour “We’ve been incorporating hints of green into our interior design schemes, through soft furnishings, wall colours, furniture or plants for the last couple of years. This influx of ...</p>
+						<a class="btn btn_default" href="news-item.html">Read More</a>
+					</div>
+					<div class="news-list__col news-list__col_bgr">
+						<a href="news-item.html" style="background-image: url(@img/interior-1.jpg);"></a>
+					</div>
+				</div>
+
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<h2>Interior trends to look out for in 2023</h2>
+						<p>08/12/2022</p>
+						<p>On colour “We’ve been incorporating hints of green into our interior design schemes, through soft furnishings, wall colours, furniture or plants for the last couple of years. This influx of ...</p>
+						<a class="btn btn_default" href="news-item.html">Read More</a>
+					</div>
+					<div class="news-list__col news-list__col_bgr">
+						<a href="news-item.html" style="background-image: url(@img/bespoke-1.jpg);"></a>
+					</div>
+				</div>
+
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<h2>Interior trends to look out for in 2023</h2>
+						<p>08/12/2022</p>
+						<p>On colour “We’ve been incorporating hints of green into our interior design schemes, through soft furnishings, wall colours, furniture or plants for the last couple of years. This influx of ...</p>
+						<a class="btn btn_default" href="news-item.html">Read More</a>
+					</div>
+					<div class="news-list__col news-list__col_bgr">
+						<a href="news-item.html" style="background-image: url(@img/interior-2.jpg);"></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	@@include('html/footer.html', {})
+	@@include('html/svg.html', {})
+	@@include('html/scripts.html', {})
+</body>
+</html>

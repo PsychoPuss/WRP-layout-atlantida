@@ -4,14 +4,40 @@
 	background: url("@img/bgr_pattern.png") 26px 26px;
 }
 
-.block-start,
-.block-end {
+.text-block {
 	max-width: calc($max-width / 2);
 	margin: 0 auto 40px;
 	text-align: center;
 
-	p {
+	h1 {
+		margin: 8px 0 30px;
+	}
+
+	p,
+	span {
+		font-size: 14px;
+		font-weight: 500;
 		line-height: 1.75;
+	}
+
+	// .text-block__intro
+	&__intro {
+		p {
+			font-family: $header-font-stack;
+			font-style: italic;
+			font-size: 21px;
+			line-height: 1.6;
+			margin-bottom: 10px;
+		}
+	}
+
+	// .text-block_bigger
+	&_bigger {
+		p,
+		span {
+			font-size: 15px;
+			font-weight: 400;
+		}
 	}
 
 	@include when-inside(".container_wide") {
@@ -25,20 +51,25 @@
 	}
 }
 
-.block-start {
-	h1 {
-		margin: 8px 0 30px;
-	}
-	
-	p {
-		font-size: 14px;
-		font-weight: 500;
-	}
+.tizers {
+	display: flex;
+	max-width: 1400px;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
+.tizer {
+	text-align: center;
+	flex: 0 1 250px;
 
-.block-end {
+	h3 {
+		font-family: $text-font-stack;
+		font-size: 82px;
+		line-height: 1;
+		font-weight: 200;
+		color: $gold-light;
+	}
 	p {
-		font-size: 15px;
-		font-weight: 400;
+		color: $white;
 	}
 }

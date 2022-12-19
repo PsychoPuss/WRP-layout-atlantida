@@ -45,7 +45,7 @@
 	}
 
 	@include respond-to(lg) {
-		max-width: 990px;
+		max-width: $max-width-cols;
 	}
 
 	& > div {
@@ -64,6 +64,10 @@
 	@include respond-to(md) {
 		column-count: 2;
 		column-gap: 30px;
+	}
+
+	@include respond-to(lg) {
+		max-width: $max-width-cols;
 	}
 }
 
@@ -95,6 +99,6 @@
 	@include respond-to(lg) {
 		column-count: 3;
 		column-gap: 30px;
-		max-width: 990px;
+		max-width: $max-width-cols;
 	}
 }

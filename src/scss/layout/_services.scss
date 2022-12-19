@@ -1,30 +1,130 @@
 .services {
+
 	// .services__row
 	&__row {
 		display: flex;
+		flex-direction: column;
 		max-width: calc($max-width * 2);
 		min-height: 500px;
 		margin: 0 auto;
+
+		@include respond-to(lg) {
+			flex-direction: row;
+		}
+	}
+
+	// .services__col
+	&__col {
+		order: 1;
+		padding: 50px;
+		flex-basis: 50%;
+	
+		h3 {
+			color: $text-color;
+			text-transform: none;
+			line-height: 1;
+			margin-bottom: 10px;
+			word-break: break-all;
+	
+			&:nth-child(1) {
+				font-size: 21px;
+				@include respond-to(md) {
+					font-size: 25px;
+				}
+			}
+			&:nth-child(2) {
+				font-size: 42px;
+	
+				@include respond-to(sm) {
+					transform: scaleX(1.14) scaleY(1.14) translateX(40px);
+				}
+	
+				@include respond-to(md) {
+					font-size: 57px;
+					transform: scaleX(1.14) scaleY(1.14) translateX(65px);
+				}
+			}
+	
+			@include when-inside(".text-gold") {
+				transform: none;
+	
+				&:nth-child(1) {
+					font-size: 25px;
+				}
+				&:nth-child(2) {
+					font-size: 47px;
+				}
+			}
+		}
+	}
+
+	// .services_big
+	&_big {
+		.services__row {
+			min-height: 700px;
+		}
+
+		@include respond-to(md) {
+			.services__col {
+				padding: 100px;
+			}
+		}
 	}
 }
 
-.service {
-	padding: 50px;
-	flex-basis: 50%;
+
+.service-icons {
+	margin: 50px 0;
+
+	// .service-icons__list
+	&__list {
+		display: grid;
+		gap: 35px;
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	}
+
+	// .service-icons__item
+	&__item {
+		font-size: 1rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $white;
+
+		img {
+			max-width: 120px;
+			margin: 0 auto 40px;
+		}
+	}
 }
 
 .parallax {
+	// order: 1;
 	position: relative;
-	padding: 0;
+	padding: 0 !important;
+	min-height: 500px;
+
+	@include respond-to(lg) {
+		// order: initial;
+		min-height: auto;
+	}
+
+	@include respond-to(lg) {
+		@include when-inside('.services__row:nth-child(odd)') {
+			order: 1;
+		}
+		@include when-inside('.services__row:nth-child(even)') {
+			order: 0;
+		}
+	}
 
 	&__wrapper {
 		overflow: hidden;
 		position: absolute;
-		// height: 50vh;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
+		// height: 50vh;
 	}
 	&__bg {
 		background-repeat: no-repeat;
@@ -37,14 +137,6 @@
 		height: 100%;
 	}
 }
-
-
-
-
-
-
-
-
 
 .parallax-layer {
 	position: absolute;
@@ -59,11 +151,4 @@
 	background-position: center bottom;
 	background-size: 120%;
 	background-repeat: no-repeat;
-
-	img {
-		// transform: scale(1.1) translateY(0);
-		// transform: translateY(0);
-		// max-width: fit-content;
-		// object-fit: cover;
-	}
 }

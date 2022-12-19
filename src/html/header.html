@@ -9,30 +9,30 @@
 		</label>
 		<div class="menu">
 			<ul class="menu__list">
-				<li class="menu__item"><a href="/"@@if(context.home){ class="active"}>Главная</a></li>
-				<li class="menu__item menu__item_childs"><a href="properties_all.html"@@if(context.properties || context.properties_london || context.properties_mansion){ class="active"}>Недвижимость</a>
+				<li class="menu__item"><a href="/"@@if(context.home){ class="active"}>Home</a></li>
+				<li class="menu__item menu__item_childs"><a href="properties_all.html"@@if(context.properties || context.properties_london || context.properties_mansion){ class="active"}>Properties for sale</a>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="properties_all.html"@@if(context.properties_all){ class="active"}>Вся недвижимость</a></li>
+						<li class="menu__item"><a href="properties_all.html"@@if(context.properties_all){ class="active"}>All properties</a></li>
 						<li class="menu__item"><a href="properties_london.html"@@if(context.properties_london){ class="active"}>London properties</a></li>
 						<li class="menu__item"><a href="properties_mansion.html"@@if(context.properties_mansion){ class="active"}>Luxury mansions</a></li>
 					</ul>
 				</li>
-				<li class="menu__item menu__item_childs"><a href="services_1.html"@@if(context.services_1 || context.services_2 || context.services_3){ class="active"}>Услуги</a>
+				<li class="menu__item menu__item_childs"><a href="services_bespoke.html"@@if(context.services_bespoke || context.services_interior_design || context.services_land){ class="active"}>Services</a>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="services_1.html"@@if(context.services_1){ class="active"}>Услуга 1</a></li>
-						<li class="menu__item"><a href="services_2.html"@@if(context.services_2){ class="active"}>Услуга 2</a></li>
+						<li class="menu__item"><a href="services_bespoke.html"@@if(context.services_bespoke){ class="active"}>Bespoke</a></li>
+						<li class="menu__item"><a href="services_interior_design.html"@@if(context.services_interior_design){ class="active"}>Interior design</a></li>
 						<li class="menu__item"><a href="services_land.html"@@if(context.services_land){ class="active"}>Land</a></li>
 					</ul>
 				</li>
-				<li class="menu__item menu__item_childs"><a href="gallery_photos.html"@@if(context.gallery_photos || context.gallery_videos){ class="active"}>Галерея</a>
+				<li class="menu__item menu__item_childs"><a href="gallery_photos.html"@@if(context.gallery_photos || context.gallery_videos){ class="active"}>Gallery</a>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="gallery_photos.html"@@if(context.gallery_photos){ class="active"}>Галерея фото</a></li>
-						<li class="menu__item"><a href="gallery_videos.html"@@if(context.gallery_videos){ class="active"}>Галерея видео</a></li>
+						<li class="menu__item"><a href="gallery_photos.html"@@if(context.gallery_photos){ class="active"}>Image gallery</a></li>
+						<li class="menu__item"><a href="gallery_videos.html"@@if(context.gallery_videos){ class="active"}>Video gallery</a></li>
 					</ul>
 				</li>
-				<li class="menu__item"><a href="news.html"@@if(context.news){ class="active"}>Новости</a></li>
-				<li class="menu__item"><a href="about.html"@@if(context.about){ class="active"}>О нас</a></li>
-				<li class="menu__item"><a href="contacts.html"@@if(context.contacts){ class="active"}>Контакты</a></li>
+				<li class="menu__item"><a href="news-list.html"@@if(context.newslist || context.newsitem){ class="active"}>News</a></li>
+				<li class="menu__item"><a href="about.html"@@if(context.about){ class="active"}>About us</a></li>
+				<li class="menu__item"><a href="contacts.html"@@if(context.contacts){ class="active"}>Contact us</a></li>
 			</ul>
 		</div>
 	</nav>

@@ -57,7 +57,7 @@ export function parallaxInit() {
 
 export function isotopeInit() {
 	const isotopeContainer = document.querySelector(".gallery"),
-		filterButtons = document.querySelector(".gallery-filter > ul");
+		filterButtons = document.querySelector(".nav-filter > ul");
 
 	let isotopeGallery = () => {
 		if (isotopeContainer) {
@@ -75,9 +75,9 @@ export function isotopeInit() {
 				let items = filterButtons.querySelectorAll("li"),
 					dataFilter = el.target.dataset.filter;
 
-				if (el.target.localName == "li" && !el.target.classList.contains("gallery-filter-active")) {
-					items.forEach((i) => i.classList.remove("gallery-filter-active"));
-					el.target.classList.add("gallery-filter-active");
+				if (el.target.localName == "li" && !el.target.classList.contains("nav-filter-active")) {
+					items.forEach((i) => i.classList.remove("nav-filter-active"));
+					el.target.classList.add("nav-filter-active");
 					isotope.arrange({ filter: dataFilter });
 
 					// isotope.once("arrangeComplete", function () {

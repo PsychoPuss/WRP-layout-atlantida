@@ -26,6 +26,25 @@
 	width: 100%;
 	height: 80vh;
 
+	// .swiper-main__header
+	&__header {
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+		text-align: center;
+		max-width: 80%;
+    height: 100%;
+		z-index: 12;
+
+		* {
+			color: $white !important;
+		}
+
+		span, p {
+			text-transform: uppercase;
+		}
+	}
+
 	.swiper-slide {
 		a {
 			display: flex;
@@ -37,15 +56,17 @@
 		}
 
 		&_overlay {
-			&::before {
-				position: absolute;
-				content: '';
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba($black, 0.5);
-				z-index: 11;
+			a {
+				&::before {
+					position: absolute;
+					content: '';
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba($black, 0.5);
+					z-index: 11;
+				}
 			}
 		}
 	}
@@ -100,7 +121,7 @@
 .swiper-1-per-row {
 	padding-bottom: 50px;
 	margin: 48px auto 30px;
-	max-width: 990px;
+	max-width: $max-width-cols;
 
 	img {
 		width: 100%;
