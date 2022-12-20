@@ -22,11 +22,6 @@
 @import 'layout/header',
 		'layout/nav',
 		'layout/main',
-		'layout/property-list',
-		'layout/services',
-		'layout/gallery',
-		'layout/news',
-		'layout/about',
 		'layout/footer';
 
 // 5. Components
@@ -35,7 +30,12 @@
 		'components/button';
 
 // 6. Page-specific styles
-@import 'pages/home';
+@import 'pages/home',
+		'pages/property-list',
+		'pages/services',
+		'pages/gallery',
+		'pages/news',
+		'pages/about';
 
 // 7. Themes
 @import 'themes/default';

@@ -18,6 +18,7 @@ $code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
 /// @type Color
 $brand-color-primary: #c45824 !default;  // b22222
 $brand-color-primary-lighten: #d37447;
+$brand-color-primary-lightest: #ffeee6;
 $color-brick: #b22222;
 // $brand-color-primary-darken: darken($brand-color-primary, 7%);
 // $brand-color-secondary: #00d5ff !default;
@@ -61,7 +62,6 @@ $black: #000;
 $red: $color-brick;
 $gold: #a69073;
 $gold-light: #cab386;
-$green-light: #ecf6ee;
 
 /// Buttons
 $btn-grey-light: #818a90; // submit

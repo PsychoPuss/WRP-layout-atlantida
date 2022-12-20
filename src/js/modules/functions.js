@@ -104,7 +104,7 @@ export function isotopeInit() {
 
 export function careersTop() {
 	let careersTopOffset = () => {
-		const div = document.querySelector(".gallery-careers"),
+		const div = document.querySelector(".gallery-careers_top"),
 			header = document.querySelector("header");
 		div.style.marginTop = `${header.offsetHeight - 125}px`;
 	};
