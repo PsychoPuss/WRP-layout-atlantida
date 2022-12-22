@@ -88,6 +88,8 @@
 	text-transform: uppercase;
 	display: flex;
 	flex-wrap: wrap;
+	max-width: calc($max-width * 2);
+	margin: 0 auto;
 
 	// .benefits__item
 	&__item {
@@ -101,6 +103,7 @@
 		margin: 15px;
 		text-align: center;
 		padding: 15px 10px 20px;
+		background: $white;
 		border: 1px solid $text-color;
 		box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
 		border-radius: 6px;
@@ -150,5 +153,95 @@
 			line-height: 1.1;
 			margin-bottom: 10px;
 		}
+	}
+}
+
+.cv {
+	text-align: center;
+	margin: 40px auto;
+	padding: 20px 35px;
+	border: 1px solid $text-color;
+	border-radius: 6px;
+}
+
+.about-us {
+	// .about-us__row
+	&__row {
+		display: flex;
+		flex-direction: column;
+		max-width: calc($max-width * 2);
+		min-height: 500px;
+		margin: 0 auto;
+
+		@include respond-to(md) {
+			flex-direction: row;
+		}
+	}
+
+	// .about-us__col
+	&__col {
+		order: 1;
+		flex-basis: 50%;
+	}
+}
+
+.about-us-ceo {
+	position: relative;
+	overflow: hidden;
+
+		// .about-us-ceo__name
+		&__name {
+			position: absolute;
+			bottom: 35px;
+			right: 35px;
+			color: $white;
+			line-height: 1;
+		}
+
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.about-us-text {
+	padding: 65px 30px 30px;
+	text-align: center;
+
+	@include respond-to(md) {
+		padding: 30px;
+	}
+
+	@include respond-to(lg) {
+		padding: 65px;
+	}
+
+	img {
+		margin: 30px auto;
+	}
+}
+
+.awards {
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		font-size: 16px;
+	}
+}
+
+.gallery-awards {
+	max-width: $max-width-cols;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+
+	img {
+		width: auto;
+		max-width: 150px;
+		flex: 0 1 auto;
+		margin: 15px;
 	}
 }

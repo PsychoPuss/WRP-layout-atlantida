@@ -1,21 +1,3 @@
-/* Проверка поддержки webp браузером */
-export function isWebp() {
-	function testWebP(callback) {
-		let webP = new Image();
-		webP.onload = webP.onerror = function () {
-			callback(webP.height == 2);
-		};
-		webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-	}
-	testWebP(function (support) {
-		if (support == true) {
-			document.querySelector("body").classList.add("webp");
-		} else {
-			document.querySelector("body").classList.add("no-webp");
-		}
-	});
-}
-
 export function stickyHeader() {
 	const hasMainCarousel = document.querySelector(".swiper-main"),
 		header = document.querySelector("header");
@@ -55,124 +37,30 @@ export function parallaxInit() {
 	parallax();
 }
 
-export function isotopeInit() {
-	const isotopeContainer = document.querySelector(".gallery"),
-		filterButtons = document.querySelector(".nav-filter > ul");
-
-	let isotopeGallery = () => {
-		if (isotopeContainer) {
-			const isotope = new Isotope(isotopeContainer, {
-				itemSelector: ".gallery__item",
-				masonry: {
-					columnWidth: ".grid-sizer",
-					gutter: ".grid-gutter-sizer",
-				},
-			});
-
-			isotope.layout();
-
-			filterButtons.addEventListener("click", function (el) {
-				let items = filterButtons.querySelectorAll("li"),
-					dataFilter = el.target.dataset.filter;
-
-				if (el.target.localName == "li" && !el.target.classList.contains("nav-filter-active")) {
-					items.forEach((i) => i.classList.remove("nav-filter-active"));
-					el.target.classList.add("nav-filter-active");
-					isotope.arrange({ filter: dataFilter });
-
-					// isotope.once("arrangeComplete", function () {
-					// 	isotope.layout();
-					// });
-
-					Fancybox.bind(dataFilter, {
-						hideScrollbar: false,
-						groupAll: true,
-					});
-				}
-			});
-
-			Fancybox.bind(".gallery__item", {
-				hideScrollbar: false,
-				groupAll: true,
-			});
-		}
-	};
-
-	window.addEventListener("load", isotopeGallery);
-	// isotopeGallery();
-}
-
 export function careersTop() {
 	let careersTopOffset = () => {
 		const div = document.querySelector(".gallery-careers_top"),
 			header = document.querySelector("header");
-		div.style.marginTop = `${header.offsetHeight - 125}px`;
+		if (div) {
+			div.style.marginTop = `${header.offsetHeight - 125}px`;
+		}
 	};
 	window.addEventListener("load", careersTopOffset);
 	window.addEventListener("resize", careersTopOffset);
 	careersTopOffset();
 }
 
-export function swipersInit() {
-	const swiperMainCarousel = new Swiper(".swiper.swiper-main", {
-		loop: false,
-		pagination: {
-			el: ".swiper-main .swiper-pagination",
-			clickable: true,
-		},
-		navigation: {
-			nextEl: ".swiper-main .swiper-button-next",
-			prevEl: ".swiper-main .swiper-button-prev",
-		},
+export function formSelectInit() {
+	const contactsSelectSimple = new lc_select('select[name="title"], select[name="request_callback"], select[name="discover"]', {
+		wrap_width: "100%",
+		pre_placeh_opt: true,
 	});
 
-	const swiper1PerRowCarousel = new Swiper(".swiper.swiper-1-per-row", {
-		autoplay: {
-			delay: 3000,
-			pauseOnMouseEnter: true,
-			disableOnInteraction: false,
-		},
-		loop: true,
-		slidesPerView: 1,
-		spaceBetween: 50,
-		pagination: {
-			el: ".swiper-1-per-row .swiper-pagination",
-			clickable: true,
-		},
-	});
-
-	const swiper3PerRowCarousel = new Swiper(".swiper.swiper-3-per-row", {
-		autoplay: {
-			delay: 3000,
-			pauseOnMouseEnter: true,
-			disableOnInteraction: false,
-		},
-		loop: true,
-		slidesPerView: 1,
-		spaceBetween: 15,
-		breakpoints: {
-			577: {
-				slidesPerView: 2,
-			},
-			990: {
-				slidesPerView: 3,
-			},
-		},
-	});
-
-	const swiperWide = new Swiper(".swiper.swiper-wide", {
-		slidesPerView: 1,
-		centeredSlides: true,
-		pagination: {
-			el: ".swiper-wide .swiper-pagination",
-			clickable: true,
-		},
-		breakpoints: {
-			990: {
-				initialSlide: 1,
-				slidesPerView: 1.5,
-				spaceBetween: 15,
-			},
-		},
+	const contactsSelectMultiple = new lc_select('select[name="site"], select[name="location"]', {
+		wrap_width: "100%",
+		pre_placeh_opt: true,
+		enable_search: false,
+		// enable_search : true,
+		// max_opts : 3,
 	});
 }

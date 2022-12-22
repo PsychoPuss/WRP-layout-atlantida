@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Contacts"
+})
+<body>
+	@@include('html/header.html', {
+	"contacts": true,
+	})
+	<div class="container">
+		<div class="content content_wide">
+
+			<div class="contacts text-block text-uppercase">
+				<h1>Contact us</h1>
+				<p>if you require additional information on any of our developments, please fill in the contact form below. alternatively contact the head office directly via the contact details below.</p>
+				<p>call: 020 8481 7500 email: <a href="mailto:enquiries@octagon.co.uk">enquiries@octagon.co.uk</a>.</p>
+				<p><strong>for general enquiries from suppliers / trade, please contact</strong> <a href="mailto:buying@octagon.co.uk">buying@octagon.co.uk</a>.</p>
+				<p><strong>for enquires on careers at octagon, please visit our</strong> <a href="https://www.octagon.co.uk/careers/#.yyl_7-zmjqt">careers page</a>.</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container bg-grey-light2">
+		<div class="content content_wide">
+
+			<div class="contacts-form">
+				<h2 class="text-center">Enquiry form</h2>
+				<form action="" class="form">
+					<div class="block-cols-2">
+
+						<!-- col 1 -->
+						<div>
+
+							<div class="form__fieldgroup">
+								<label>Title *</label>
+								<div class="form__wrap">
+									<select name="title" data-placeholder="Please select">
+										<option value="mr">Mr</option>
+										<option value="mrs">Mrs</option>
+										<option value="miss">Miss</option>
+										<option value="ms">Ms</option>
+										<option value="dr">Dr</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__fieldgroup form__fieldgroup_top">
+								<label for="first_name">First name *</label>
+								<div class="form__wrap">
+									<input type="text" id="first_name" name="first_name" placeholder="First name" size="64" required>
+									<span class="error">The field is required.</span>
+								</div>
+							</div>
+							<div class="form__fieldgroup form__fieldgroup_top">
+								<label for="surname">Surname *</label>
+								<div class="form__wrap">
+									<input type="text" id="surname" name="surname" placeholder="Surname" size="64" required>
+								</div>
+							</div>
+							<div class="form__fieldgroup">
+								<label for="company_name">Company name</label>
+								<div class="form__wrap">
+									<input type="text" id="company_name" name="company_name" placeholder="Company name" size="64">
+								</div>
+							</div>
+							<div class="form__fieldgroup">
+								<label for="phone">Telephone</label>
+								<div class="form__wrap">
+									<input type="text" id="phone" name="phone" placeholder="Telephone number" size="64">
+								</div>
+							</div>
+							<div class="form__fieldgroup">
+								<label>Request call back</label>
+								<div class="form__wrap">
+									<select name="request_callback" data-placeholder="Please select">
+										<option value="callback_yes">Yes</option>
+										<option value="callback_no">No</option>
+									</select>
+								</div>
+							</div>
+							<div class="form__fieldgroup form__fieldgroup_top">
+								<label for="email">E-mail *</label>
+								<div class="form__wrap">
+									<input type="email" id="email" name="email" placeholder="E-mail address" size="64" required>
+								</div>
+							</div>
+							<div class="form__fieldgroup">
+								<label for="address">Address</label>
+								<div class="form__wrap">
+									<input type="text" id="address" name="address" placeholder="Postal address" size="255" required>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- col 2 -->
+						<div>
+
+							<div class="form__fieldgroup">
+								<label>I'm interested in this site/s</label>
+								<div class="form__wrap">
+									<select name="site" data-placeholder="Please select" multiple>
+										<option value="site1">Site 1</option>
+										<option value="site2">Site 2</option>
+										<option value="site3">Site 3</option>
+										<option value="site4">Site 4</option>
+										<option value="site5">Site 5</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form__fieldgroup">
+								<label>Property location</label>
+								<div class="form__wrap">
+									<select name="location" data-placeholder="Please select" multiple>
+										<option value="location1">Location 1</option>
+										<option value="location2">Location 2</option>
+										<option value="location3">Location 3</option>
+										<option value="location4">Location 4</option>
+										<option value="location5">Location 5</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form__fieldgroup form__fieldgroup_top">
+								<label for="query">Price range</label>
+								<div class="form__wrap">
+									<div id="price-range"></div>
+									<span class="price-range-result"></span>
+									<input type="hidden" name="price_range" class="price-range-input" value="">
+								</div>
+							</div>
+
+							<div class="form__fieldgroup form__fieldgroup_top">
+								<label for="query">Your query</label>
+								<div class="form__wrap">
+									<textarea name="query" id="query" cols="40" rows="8" placeholder="Please let us know what you are interested in"></textarea>
+								</div>
+							</div>
+
+							<div class="form__fieldgroup">
+								<label>How did you discover Octagon</label>
+								<div class="form__wrap">
+									<select name="discover" data-placeholder="Please select">
+										<option value="google">Google</option>
+										<option value="social">Social media</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="form__submit">
+						<div class="form__fieldgroup form__fieldgroup_vertical">
+							<label><input type="checkbox" name="terms"> I agree to Octagons <a href="#" target="_blank">Terms and Conditions</a>*</label>
+							<label><input type="checkbox" name="subscribe" disabled> I'd like to receive future marketing from Octagon</label>
+						</div>
+						<button type="submit" class="btn btn_default btn_large">Submit</button>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="content">
+
+			<div class="text-uppercase text-center">
+				<h2>Address</h2>
+				<p>REGISTERED OFFICE: OCTAGON DEVELOPMENTS LTD, WEIR HOUSE, HURST ROAD, EAST MOLESEY, SURREY KT8 9AY</p>
+				<div class="small">
+					REGISTRATION NUMBER: 1467331 IN ENGLAND /
+					NHBC REGISTRATION NUMBER: 38442 /
+					CITB REGISTRATION NUMBER: 1405685 /
+					VAT NUMBER: 413 3279 75
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container container_wide">
+		<div class="content content_wide">
+
+			map
+
+
+
+		</div>
+	</div>
+
+	@@include('html/footer.html', {})
+	@@include('html/svg.html', {})
+	@@include('html/scripts.html', {})
+</body>
+</html>

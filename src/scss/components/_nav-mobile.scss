@@ -1,9 +1,9 @@
 //*! https://codepen.io/forestdump/pen/LYrMOLa */
 
 .menu-toggle {
-	opacity: 0;
-	display: none;
-	visibility: hidden;
+	opacity: 0 !important;
+	display: none !important;
+	visibility: hidden !important;
 
 	&:checked {
 		~ .menu {

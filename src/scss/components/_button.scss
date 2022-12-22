@@ -16,7 +16,18 @@
 			min-width: 14rem;
 		}
 	}
-	
+
+	// .btn_large
+	&_large {
+		font-size: 15px;
+		padding: 12px 16px 10px;
+		min-width: 14rem;
+
+		@include respond-to(md) {
+			min-width: 21rem;
+		}
+	}
+
 	// .btn_spacing
 	&_spacing {
 		letter-spacing: 2px;

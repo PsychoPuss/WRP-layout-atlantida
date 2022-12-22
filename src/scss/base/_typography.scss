@@ -135,7 +135,7 @@ body {
 }
 
 .small {
-	font-size: 0.85rem;
+	font-size: 0.85rem !important;
 }
 
 /**
@@ -193,11 +193,15 @@ ol {
 }
 
 .text-center {
-	text-align: center;
+	text-align: center !important;
+}
+
+.text-left {
+	text-align: left !important;
 }
 
 .text-right {
-	text-align: right;
+	text-align: right !important;
 }
 
 .text-uppercase {
