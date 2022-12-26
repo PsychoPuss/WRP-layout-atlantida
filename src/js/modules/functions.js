@@ -60,7 +60,6 @@ export function formSelectInit() {
 		wrap_width: "100%",
 		pre_placeh_opt: true,
 		enable_search: false,
-		// enable_search : true,
 		// max_opts : 3,
 	});
 }

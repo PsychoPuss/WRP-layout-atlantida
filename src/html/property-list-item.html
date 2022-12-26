@@ -1,5 +1,5 @@
 
-<div class="property-list__item">
+<div class="property-list__item" id="@@id" data-lat="@@data-lat" data-lng="@@data-lng">
 	<a href="#" class="property-list__link">@@if(sold) {<div class="tag tag_sold">Sold</div>}
 		<img src="@img/@@image" alt="">
 	</a>
@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="property-list-map">
-			<a href="#">
+			<a href="javascript:void(0)" data-view="map">
 				<svg class="map-pointer">
 					<use xlink:href="#map-pointer"></use>
 				</svg>

@@ -169,3 +169,12 @@
 .error {
 	color: $red;
 }
+
+.position-relative {
+	position: relative;
+}
+
+.no-scroll {
+	height: 100vh;
+	overflow: hidden;
+}

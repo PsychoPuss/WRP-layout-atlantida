@@ -1,0 +1,28 @@
+.map {
+	// .map__office
+	&__office {
+		height: 400px;
+	}
+	// .map__property-list
+	&__property-list {
+		position: absolute;
+		z-index: 1;
+		left: -100vw;
+		width: 100%;
+		// left: 0;
+		// width: calc(100% + $min-padding * 2);
+		background: rgb(196, 196, 196);
+		// margin-left: -$min-padding;
+
+		@include respond-to(md) {
+			// width: calc(100% + $max-padding * 2);
+			// margin-left: -$max-padding;
+			// height: 50vh;
+
+			// display: flex;
+			// flex-direction: column;
+			// height: 100vh;
+			// flex-grow: 1;
+		}
+	}
+}

@@ -119,7 +119,8 @@
 		border-radius: 50%;
 		background: $brand-color-primary-lighten;
 
-		&::before, &::after {
+		&::before,
+		&::after {
 			display: none;
 		}
 	}

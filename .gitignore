@@ -1,2 +1,4 @@
 node_modules
 gulp/version.json
+.octagon_src
+.vscode
