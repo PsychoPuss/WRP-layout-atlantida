@@ -65,4 +65,13 @@
 			color: $white;
 		}
 	}
+
+	// .btn_tab
+	&_tab {
+		background: $white;
+
+		&.tab-active {
+			color: $brand-color-primary;
+		}
+	}
 }

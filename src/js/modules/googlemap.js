@@ -66,31 +66,65 @@ loader.load().then(() => {
 		const items = document.querySelectorAll("[data-view=map]");
 		items.forEach((i) => {
 			i.addEventListener("click", () => {
-				// show layer
-				mapCanvas.style.left = 0;
-				document.body.style.height = "100vh";
-				document.body.style.overflowY = "hidden";
 				// set active icon and show property card
 				let object = i.parentElement.closest(".property-list__item"),
 					pId = object.getAttribute("id");
 				displayPropertyOnMap(pId);
+				// show map layer
+				mapCanvas.style.left = 0;
+				document.body.style.height = "100vh";
+				document.body.style.overflowY = "hidden";
 			});
 		});
 	};
 	showAllPropertiesMap();
 
+	let hideAllPropertiesMap = () => {
+		const items = document.querySelectorAll("[data-view=map]");
+		items.forEach((i) => {
+			// set back pointer icon
+			i.querySelector(".map-pointer").innerHTML = '<use xlink:href="#map-pointer"></use>';
+		});
+		// hide map layer
+		mapCanvas.style.left = "";
+		document.body.style.height = "";
+		document.body.style.overflowY = "";
+	};
+
+	let displayPropertyOnMap = (pId) => {
+		resetMarkers();
+		markers[pId].setIcon(icons["active"].icon);
+		markers[pId].setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+		map.panTo(markers[pId].getPosition());
+
+		let div = document.getElementById(pId),
+			mapInfo = document.querySelector(".map__info");
+
+		div.querySelector(".map-pointer").innerHTML = '<use xlink:href="#map-back"></use>';
+		mapInfo.innerHTML = div.innerHTML;
+
+		let close = mapInfo.querySelector("[data-view=map]");
+		close.addEventListener("click", () => {
+			mapInfo.innerHTML = "";
+			hideAllPropertiesMap();
+		});
+	};
+
 	let updateMapHeight = () => {
+		console.log('1');
+		// if (mapCanvas.classList.contains("map__property-all")) {
+		console.log('2');
 		mapCanvas.style.height = `${window.innerHeight - mapCanvas.getBoundingClientRect().top}px`;
+		// }
 	};
 
 	let getMarkers = () => {
 		return markers;
 	};
 
-	let refreshMaps = () => {
-		clearMarkers();
-		// set_property_index_markers(jQuery(".property-nugget"));
-	};
+	// let refreshMaps = () => {
+	// 	clearMarkers();
+	// };
 
 	let resetMarkers = () => {
 		let elements = Object.keys(markers);
@@ -106,13 +140,6 @@ loader.load().then(() => {
 			markers[i].setMap(null);
 		});
 		markers = null;
-	};
-
-	let displayPropertyOnMap = (pId) => {
-		resetMarkers();
-		markers[pId].setIcon(icons["active"].icon);
-		markers[pId].setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
-		map.panTo(markers[pId].getPosition());
 	};
 
 	/**

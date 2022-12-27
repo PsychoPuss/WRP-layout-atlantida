@@ -37,6 +37,10 @@
 			@include respond-to(xl) {
 				height: 300px;
 			}
+
+			@include when-inside('.map__info_small') {
+				height: 250px;
+			}
 		}
 	}
 	// .property-list__desc
@@ -92,9 +96,17 @@
 
 .property-list-map {
 	width: 20%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: none;
+
+	@include respond-to(md) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@include when-inside('.map__info_small') {
+		display: none;
+	}
 
 	a {
 		display: block;

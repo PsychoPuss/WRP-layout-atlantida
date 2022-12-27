@@ -13,10 +13,12 @@
 		margin: 8px 0 30px;
 	}
 
-	h1, h2, h3 {
+	h1,
+	h2,
+	h3 {
 		text-align: center;
 	}
-	
+
 	p,
 	span {
 		font-size: 15px;
@@ -55,7 +57,7 @@
 	}
 }
 
-.block-cols-2 {
+.block-cols {
 	display: flex;
 	flex-direction: column;
 	margin-left: -$min-padding;
@@ -73,9 +75,28 @@
 	& > div {
 		font-size: 15px;
 		padding: 0 $min-padding;
+	}
 
-		@include respond-to(md) {
-			width: 50%;
+	&_col-2-1 {
+		& > div {
+			margin-bottom: 20px;
+
+			@include respond-to(md) {
+				width: 66.6667%;
+				margin-bottom: inherit;
+
+				& + div {
+					width: 33.3333%;
+				}
+			}
+		}
+	}
+
+	&_col-2 {
+		& > div {
+			@include respond-to(md) {
+				width: 50%;
+			}
 		}
 	}
 }
@@ -148,4 +169,3 @@
 		color: $white;
 	}
 }
-

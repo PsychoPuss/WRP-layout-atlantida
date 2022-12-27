@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Interiors</title>
+	<title>Property item</title>
 </head>
 
 <body>
@@ -25,17 +25,17 @@
 			<div class="menu">
 				<ul class="menu__list">
 					<li class="menu__item"><a href="/">Home</a></li>
-					<li class="menu__item menu__item_childs"><a href="properties_all.html">Properties for sale</a>
+					<li class="menu__item menu__item_childs"><a href="properties_all.html" class="active">Properties for sale</a>
 						<ul class="menu__list">
 							<li class="menu__item"><a href="properties_all.html">All properties</a></li>
 							<li class="menu__item"><a href="properties_london.html">London properties</a></li>
 							<li class="menu__item"><a href="properties_mansion.html">Luxury mansions</a></li>
 						</ul>
 					</li>
-					<li class="menu__item menu__item_childs"><a href="services_bespoke.html" class="active">Services</a>
+					<li class="menu__item menu__item_childs"><a href="services_bespoke.html">Services</a>
 						<ul class="menu__list">
 							<li class="menu__item"><a href="services_bespoke.html">Bespoke</a></li>
-							<li class="menu__item"><a href="services_interior_design.html" class="active">Interior design</a></li>
+							<li class="menu__item"><a href="services_interior_design.html">Interior design</a></li>
 							<li class="menu__item"><a href="services_land.html">Land</a></li>
 						</ul>
 					</li>
@@ -79,90 +79,79 @@
 	<div class="carousel-separator"></div>
 
 
+
 	<div class="container">
-		<div class="content text-gold">
+		<div class="content">
 
-			<div class="text-block">
-				<div class="text-block__intro">
-					<h1>OCTAGON INTERIORS</h1>
-					<h4><em>Beautifully</em></h4>
-					<h1>CONSIDERED</h1>
-					<p>Our experienced design team offer a range of interior services to suit your budget and assist with your project needs in a personal and professional manner.</p>
-				</div>
-			</div>
-
-			<div class="flex-center">
-				<a href="javascript:void(0)" class="btn btn_dark btn_wide btn_spacing">CALL – 020 8481 7500</a>
+			<div class="tab-buttons">
+				<button class="btn btn_tab tab-active" data-tab="tab1">London</button>
+				<button class="btn btn_tab" data-tab="tab2">Paris</button>
+				<button class="btn btn_tab" data-tab="tab3">Tokyo</button>
 			</div>
 
 		</div>
 	</div>
 
-	<div class="container bg-grey-dark3">
-		<div class="content text-gold text-center">
+	<div class="container container_short">
+		<div class="content property">
 
-			<h1>OCTAGON INTERIORS</h1>
-			<h4><em>At your</em></h4>
-			<h1>SERVICE</h1>
-
-			<div class="service-icons">
-				<div class="service-icons__list">
-					<div class="service-icons__item"><img src="img/service_icons/1.png" alt="">Design consultancy</div>
-					<div class="service-icons__item"><img src="img/service_icons/2.png" alt="">Interior finishes</div>
-					<div class="service-icons__item"><img src="img/service_icons/3.png" alt="">Design consultancy</div>
-					<div class="service-icons__item"><img src="img/service_icons/4.png" alt="">Project management</div>
-					<div class="service-icons__item"><img src="img/service_icons/5.png" alt="">Space planning</div>
-					<div class="service-icons__item"><img src="img/service_icons/6.png" alt="">Design concepts</div>
-					<div class="service-icons__item"><img src="img/service_icons/7.png" alt="">Feature lighting</div>
-					<div class="service-icons__item"><img src="img/service_icons/8.png" alt="">Procurement</div>
-					<div class="service-icons__item"><img src="img/service_icons/9.png" alt="">Product sourcing</div>
-					<div class="service-icons__item"><img src="img/service_icons/10.png" alt="">Furniture & soft furnishings</div>
-					<div class="service-icons__item"><img src="img/service_icons/11.png" alt="">Artwork & accessories</div>
-					<div class="service-icons__item"><img src="img/service_icons/12.png" alt="">Delivery & installation</div>
-				</div>
+			<div class="text-block text-uppercase property__header">
+				<h1>Bishops row</h1>
+				<h2>Stevenage road, fulham, london, sw6 6pb</h2>
+				<p>A luxurious development of just nine new 4 and 5 bedroom townhouses in the bishops park conservation area – running parallel to the river thames.</p>
+				<p class="property__date">Completion: Summer 2024</p>
+				<p class="property__price">PRICE: £22 MILLION / Sold</p>
+				<a href="contacts.html" class="btn btn_default">Register your interest</a>
 			</div>
 
-		</div>
-	</div>
+			<div class="property__tab tab-active">
+				<div class="property__overview">
 
-	<div class="container container_wide container_short">
-		<div class="content content_wide text-gold">
-
-			<div class="services services_big bg-grey-light4">
-				<div class="services__row">
-					<div class="services__col">
-						<h3><em>Be</em></h3>
-						<h3>LUXURIANT</h3>
-						<p>We have built up an exceptional team and relationships with the very best suppliers and craftsmen, and we pride ourselves on going the extra mile to help you achieve your design ambitions. This enables us to offer competitive rates and provide value for money with a truly personal service. We see every project as a unique opportunity to exceed our clients’ expectations.</p>
-					</div>
-					<div class="services__col parallax">
-						<div class="parallax__wrapper">
-							<div class="parallax__bg" style="background-image: url(img/interior-1.jpg);"></div>
+					<div class="block-cols block-cols_col-2-1">
+						<div class="text-cols-2">
+							<p>Octagon presents a luxurious development of just nine new 4 and 5 bedroom townhouses in Bishops Park, a conservation area that runs parallel to the River Thames in Fulham.</p>
+							<p>Designed for family living, these deceptively spacious homes combine high-spec finishes with spectacular terrace and balcony views of the river, along with an outlook onto the adjacent park. The properties are between 4,375 &mdash; 6,150 sq ft, and so offer versatile and flexible accommodation arranged over 5 floors. The generous living space includes 4 formal reception rooms, as well as a gym and TV den / cinema room, which leads onto a covered courtyard garden with a walk-on glass ceiling. These leisure spaces on the lower ground floor could have flexible uses to suit individual requirements.</p>
+							<p>The enviable kitchen/breakfast/family room opens onto a west backing walled garden and features modern linear handle-less cabinets, quartz worktops and top-of-the-range integrated Miele appliances. The formal drawing room has a modern limestone fireplace complemented by a timber flooring and inset carpet and leads onto an additional outside rear terrace.</p>
+							<p>Included in the renowned Octagon specification for this luxury home in Stevenage Road, Fulham is a building management system, boosted Wifi, comfort cooling and part air conditioning. There is intelligent lighting and underfloor heating throughout.</p>
+							<p>Bishops Row is a moments&rsquo; walk from the River Thames and its tow-path access to Putney Bridge. The District Line underground station is nearby. There are 2 further Underground options at Parsons Green and Fulham Broadway. London Victoria is less than 20 minutes away. Fulham&rsquo;s vibrant centre is nearby, with its shops, bars, boutiques and notable restaurants like the Michelin-starred River Caf&eacute;, which is just 0.4 miles/3 minute walk from the property. Fulham also currently boasts the only Michelin starred gastropub in London: the Harwood Arms.</p>
+							<p>Fulham is renowned for its excellent local schooling such as London Oratory School, Fulham Prep School, Latymer Upper School, Fulham Cross Girls&rsquo; School and Chelsea Independent College.</p>
+							<p>To watch the Showhouse walk through video, <a href="javascript:void(0)">click here.</a></p>
+							<p>To read more about Bishops Row, <a href="javascript:void(0)">click here.</a></p>
+							<p>View more Octagon homes in London, <a href="javascript:void(0)">Eagle House.</a></p>
+							<p><strong>PLOT 1 &mdash; SOLD<br />PLOT 2 &mdash; SOLD<br />PLOT 3 &mdash; SOLD<br />PLOT 4 &mdash; SOLD</strong><strong><br />PLOT 5 &mdash; SOLD<br />PLOT 6 &mdash; SOLD<br />PLOT 7 &mdash; SOLD<br />PLOT 8 &mdash; SOLD<br />PLOT 9 &mdash; SOLD</strong></p>
+						</div>
+						<div class="property__sidebar">
+							<ul>
+								<li>LUXURY NEW HOMES IN FULHAM</li>
+								<li>MAGNIFICENT 4 &amp; 5 BEDROOM HOMES</li>
+								<li>PREMIER LONDON LOCATION</li>
+								<li>VIEWS OVER THE RIVER THAMES</li>
+								<li>4 RECEPTION ROOMS</li>
+								<li>GYM</li>
+								<li>WINE ROOM</li>
+								<li>UNDERFLOOR HEATING</li>
+								<li>PRIVATE ROOF TERRACES/BALCONIES</li>
+								<li>WEST BACKING WALLED GARDEN</li>
+								<li>ADDITIONAL COVERED COURTYARD GARDEN</li>
+							</ul>
 						</div>
 					</div>
-				</div>
 
-				<div class="services__row">
-					<div class="services__col">
-						<h3><em>Be</em></h3>
-						<h3>ELEGANT</h3>
-						<p>From the initial design consultation through to installation, we work with you to create elegant, sophisticated designs that are practical, functional and truly exquisite. We believe in attention to detail and incorporating balance and flow within all our designs. The Octagon teamwork with you to develop luxurious spaces that are as beautiful as they are practical, where you will feel at home from day one.</p>
-						<p>
-							<strong>Tel:</strong> <a href="tel: 02084817500">020 8481 7500</a>
-							<br>
-							<strong>Email:</strong> <a href="mailto:interiors@octagon.co.uk">interiors@octagon.co.uk</a>
-						</p>
-					</div>
-					<div class="services__col parallax">
-						<div class="parallax__wrapper">
-							<div class="parallax__bg" style="background-image: url(img/interior-2.jpg);"></div>
-						</div>
-					</div>
 				</div>
 			</div>
 
+			<div class="property__tab">
+				tab 2
+			</div>
+
+			<div class="property__tab">
+				tab 3
+			</div>
+
+
 		</div>
 	</div>
+
 
 	<footer class="container footer">
 		<div class="footer__logo">

@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Interiors</title>
+	<title>News list</title>
 </head>
 
 <body>
@@ -32,10 +32,10 @@
 							<li class="menu__item"><a href="properties_mansion.html">Luxury mansions</a></li>
 						</ul>
 					</li>
-					<li class="menu__item menu__item_childs"><a href="services_bespoke.html" class="active">Services</a>
+					<li class="menu__item menu__item_childs"><a href="services_bespoke.html">Services</a>
 						<ul class="menu__list">
 							<li class="menu__item"><a href="services_bespoke.html">Bespoke</a></li>
-							<li class="menu__item"><a href="services_interior_design.html" class="active">Interior design</a></li>
+							<li class="menu__item"><a href="services_interior_design.html">Interior design</a></li>
 							<li class="menu__item"><a href="services_land.html">Land</a></li>
 						</ul>
 					</li>
@@ -45,7 +45,7 @@
 							<li class="menu__item"><a href="gallery_videos.html">Video gallery</a></li>
 						</ul>
 					</li>
-					<li class="menu__item"><a href="news_list.html">News</a></li>
+					<li class="menu__item"><a href="news_list.html" class="active">News</a></li>
 					<li class="menu__item menu__item_childs"><a href="about_company.html">About us</a>
 						<ul class="menu__list">
 							<li class="menu__item"><a href="about_careers.html">Careers</a></li>
@@ -59,104 +59,59 @@
 		</nav>
 	</header>
 
-	<div class="swiper swiper-main">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide" style="background-image: url(img/interiors-1.jpg);">
-				<a href="property_item.html"></a>
-			</div>
-			<div class="swiper-slide" style="background-image: url(img/interiors-2.jpg);">
-				<a href="property_item.html"></a>
-			</div>
-			<div class="swiper-slide" style="background-image: url(img/interiors-3.jpg);">
-				<a href="property_item.html"></a>
-			</div>
-		</div>
-		<div class="swiper-pagination"></div>
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-	</div>
-
-	<div class="carousel-separator"></div>
-
-
-	<div class="container">
-		<div class="content text-gold">
-
-			<div class="text-block">
-				<div class="text-block__intro">
-					<h1>OCTAGON INTERIORS</h1>
-					<h4><em>Beautifully</em></h4>
-					<h1>CONSIDERED</h1>
-					<p>Our experienced design team offer a range of interior services to suit your budget and assist with your project needs in a personal and professional manner.</p>
-				</div>
-			</div>
-
-			<div class="flex-center">
-				<a href="javascript:void(0)" class="btn btn_dark btn_wide btn_spacing">CALL – 020 8481 7500</a>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="container bg-grey-dark3">
-		<div class="content text-gold text-center">
-
-			<h1>OCTAGON INTERIORS</h1>
-			<h4><em>At your</em></h4>
-			<h1>SERVICE</h1>
-
-			<div class="service-icons">
-				<div class="service-icons__list">
-					<div class="service-icons__item"><img src="img/service_icons/1.png" alt="">Design consultancy</div>
-					<div class="service-icons__item"><img src="img/service_icons/2.png" alt="">Interior finishes</div>
-					<div class="service-icons__item"><img src="img/service_icons/3.png" alt="">Design consultancy</div>
-					<div class="service-icons__item"><img src="img/service_icons/4.png" alt="">Project management</div>
-					<div class="service-icons__item"><img src="img/service_icons/5.png" alt="">Space planning</div>
-					<div class="service-icons__item"><img src="img/service_icons/6.png" alt="">Design concepts</div>
-					<div class="service-icons__item"><img src="img/service_icons/7.png" alt="">Feature lighting</div>
-					<div class="service-icons__item"><img src="img/service_icons/8.png" alt="">Procurement</div>
-					<div class="service-icons__item"><img src="img/service_icons/9.png" alt="">Product sourcing</div>
-					<div class="service-icons__item"><img src="img/service_icons/10.png" alt="">Furniture & soft furnishings</div>
-					<div class="service-icons__item"><img src="img/service_icons/11.png" alt="">Artwork & accessories</div>
-					<div class="service-icons__item"><img src="img/service_icons/12.png" alt="">Delivery & installation</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
 
 	<div class="container container_wide container_short">
-		<div class="content content_wide text-gold">
+		<div class="content content_wide">
 
-			<div class="services services_big bg-grey-light4">
-				<div class="services__row">
-					<div class="services__col">
-						<h3><em>Be</em></h3>
-						<h3>LUXURIANT</h3>
-						<p>We have built up an exceptional team and relationships with the very best suppliers and craftsmen, and we pride ourselves on going the extra mile to help you achieve your design ambitions. This enables us to offer competitive rates and provide value for money with a truly personal service. We see every project as a unique opportunity to exceed our clients’ expectations.</p>
+			<div class="text-block text-uppercase">
+				<h1>Octagon news</h1>
+				<p>
+					All the latest news and information from octagon developments.
+				</p>
+			</div>
+
+			<nav class="nav-filter">
+				<ul>
+					<li class="nav-filter-active"><a href="#">2022</a></li>
+					<li><a href="#">2021</a></li>
+					<li><a href="#">2020</a></li>
+				</ul>
+			</nav>
+
+			<div class="news-list bg-grey-light4">
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<h2>Interior trends to look out for in 2023</h2>
+						<p>08/12/2022</p>
+						<p>On colour “We’ve been incorporating hints of green into our interior design schemes, through soft furnishings, wall colours, furniture or plants for the last couple of years. This influx of ...</p>
+						<a class="btn btn_default" href="news_item.html">Read More</a>
 					</div>
-					<div class="services__col parallax">
-						<div class="parallax__wrapper">
-							<div class="parallax__bg" style="background-image: url(img/interior-1.jpg);"></div>
-						</div>
+					<div class="news-list__col news-list__col_bgr">
+						<a href="news_item.html" style="background-image: url(img/interior-1.jpg);"></a>
 					</div>
 				</div>
 
-				<div class="services__row">
-					<div class="services__col">
-						<h3><em>Be</em></h3>
-						<h3>ELEGANT</h3>
-						<p>From the initial design consultation through to installation, we work with you to create elegant, sophisticated designs that are practical, functional and truly exquisite. We believe in attention to detail and incorporating balance and flow within all our designs. The Octagon teamwork with you to develop luxurious spaces that are as beautiful as they are practical, where you will feel at home from day one.</p>
-						<p>
-							<strong>Tel:</strong> <a href="tel: 02084817500">020 8481 7500</a>
-							<br>
-							<strong>Email:</strong> <a href="mailto:interiors@octagon.co.uk">interiors@octagon.co.uk</a>
-						</p>
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<h2>Interior trends to look out for in 2023</h2>
+						<p>08/12/2022</p>
+						<p>On colour “We’ve been incorporating hints of green into our interior design schemes, through soft furnishings, wall colours, furniture or plants for the last couple of years. This influx of ...</p>
+						<a class="btn btn_default" href="news_item.html">Read More</a>
 					</div>
-					<div class="services__col parallax">
-						<div class="parallax__wrapper">
-							<div class="parallax__bg" style="background-image: url(img/interior-2.jpg);"></div>
-						</div>
+					<div class="news-list__col news-list__col_bgr">
+						<a href="news_item.html" style="background-image: url(img/bespoke-1.jpg);"></a>
+					</div>
+				</div>
+
+				<div class="news-list__row">
+					<div class="news-list__col">
+						<h2>Interior trends to look out for in 2023</h2>
+						<p>08/12/2022</p>
+						<p>On colour “We’ve been incorporating hints of green into our interior design schemes, through soft furnishings, wall colours, furniture or plants for the last couple of years. This influx of ...</p>
+						<a class="btn btn_default" href="news_item.html">Read More</a>
+					</div>
+					<div class="news-list__col news-list__col_bgr">
+						<a href="news_item.html" style="background-image: url(img/interior-2.jpg);"></a>
 					</div>
 				</div>
 			</div>

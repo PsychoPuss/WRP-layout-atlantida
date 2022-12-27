@@ -71,12 +71,17 @@
 	width: 1px;
 }
 
+.hidden {
+	display: none !important;
+}
+
 // .hidden-lg
 .hidden-lg {
 	@include respond-to(lg) {
 		display: none !important;
 	}
 }
+
 .hidden-img-lg {
 	@include respond-to(lg) {
 		img {

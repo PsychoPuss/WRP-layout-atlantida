@@ -1,28 +1,60 @@
 .map {
+	position: relative;
+	z-index: 1;
+
+	// .map__info
+	&__info {
+		position: absolute;
+		top: 59px;
+		left: -20px;
+		width: 50%;
+		max-width: 450px;
+		z-index: 2;
+
+		@include respond-to(lg) {
+			width: 30%;
+			min-width: 400px;
+		}
+
+		@include respond-to(xxl) {
+			left: 29px;
+			width: 25%;
+		}
+
+		.property-list__desc {
+			background: $white;
+		}
+
+		// .map__info_small
+		&_small {
+			left: 10px;
+			top: 10px;
+		}
+	}
+
 	// .map__office
 	&__office {
 		height: 400px;
 	}
-	// .map__property-list
-	&__property-list {
+
+	// .map__property-all
+	&__property-all {
 		position: absolute;
 		z-index: 1;
 		left: -100vw;
 		width: 100%;
-		// left: 0;
-		// width: calc(100% + $min-padding * 2);
-		background: rgb(196, 196, 196);
-		// margin-left: -$min-padding;
+		width: calc(100% + $min-padding * 2);
+		margin-left: -$min-padding;
 
 		@include respond-to(md) {
-			// width: calc(100% + $max-padding * 2);
-			// margin-left: -$max-padding;
-			// height: 50vh;
-
-			// display: flex;
-			// flex-direction: column;
-			// height: 100vh;
-			// flex-grow: 1;
+			width: calc(100% + $max-padding * 2);
+			margin-left: -$max-padding;
 		}
 	}
+
+	// .map__property-location
+	&__property-location {
+		height: 400px;
+	}
 }
+
