@@ -7,23 +7,34 @@
 	@@include('html/header.html', {
 	"properties": true,
 	})
-	@@include('html/swiper-main-interiors.html', {})
+
+	<div class="tabs-header">
+		@@include('html/swiper-main-interiors.html', {})
+	</div>
 
 
 	<div class="container">
 		<div class="content">
 
 			<div class="tab-buttons">
-				<button class="btn btn_tab tab-active" data-tab="tab1">London</button>
-				<button class="btn btn_tab" data-tab="tab2">Paris</button>
-				<button class="btn btn_tab" data-tab="tab3">Tokyo</button>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_1">Overview</a>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_2">Floor plans</a>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_3">Local area</a>
+				<a href="#" class="btn btn_tab" data-tab="tab_4">Map</a> <!-- "#" – чтоб был переход наверх к карте в шапке (для таба с картой у них меняется только верхний контент, текста нет) -->
+				<a href="@img/swiper-main-carousel-1.jpg" class="btn btn_tab">Brochure</a>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_5">Video</a>
+				<a href="javascript:void(0)" class="btn btn_tab btn_favourites" id="property-5978" title="Add to Favourites"> <!-- класс active, если уже в избранном -->
+					<svg>
+						<use xlink:href="#star"></use>
+					</svg>
+				</a>
 			</div>
 
 		</div>
 	</div>
 
 	<div class="container container_short">
-		<div class="content property">
+		<div class="content property tabs-property">
 
 			<div class="text-block text-uppercase property__header">
 				<h1>Bishops row</h1>
@@ -34,50 +45,168 @@
 				<a href="contacts.html" class="btn btn_default">Register your interest</a>
 			</div>
 
-			<div class="property__tab tab-active">
-				<div class="property__overview">
+			<div class="property__tab tab" data-tab="tab_1">
 
-					<div class="block-cols block-cols_col-2-1">
-						<div class="text-cols-2">
-							<p>Octagon presents a luxurious development of just nine new 4 and 5 bedroom townhouses in Bishops Park, a conservation area that runs parallel to the River Thames in Fulham.</p>
-							<p>Designed for family living, these deceptively spacious homes combine high-spec finishes with spectacular terrace and balcony views of the river, along with an outlook onto the adjacent park. The properties are between 4,375 &mdash; 6,150 sq ft, and so offer versatile and flexible accommodation arranged over 5 floors. The generous living space includes 4 formal reception rooms, as well as a gym and TV den / cinema room, which leads onto a covered courtyard garden with a walk-on glass ceiling. These leisure spaces on the lower ground floor could have flexible uses to suit individual requirements.</p>
-							<p>The enviable kitchen/breakfast/family room opens onto a west backing walled garden and features modern linear handle-less cabinets, quartz worktops and top-of-the-range integrated Miele appliances. The formal drawing room has a modern limestone fireplace complemented by a timber flooring and inset carpet and leads onto an additional outside rear terrace.</p>
-							<p>Included in the renowned Octagon specification for this luxury home in Stevenage Road, Fulham is a building management system, boosted Wifi, comfort cooling and part air conditioning. There is intelligent lighting and underfloor heating throughout.</p>
-							<p>Bishops Row is a moments&rsquo; walk from the River Thames and its tow-path access to Putney Bridge. The District Line underground station is nearby. There are 2 further Underground options at Parsons Green and Fulham Broadway. London Victoria is less than 20 minutes away. Fulham&rsquo;s vibrant centre is nearby, with its shops, bars, boutiques and notable restaurants like the Michelin-starred River Caf&eacute;, which is just 0.4 miles/3 minute walk from the property. Fulham also currently boasts the only Michelin starred gastropub in London: the Harwood Arms.</p>
-							<p>Fulham is renowned for its excellent local schooling such as London Oratory School, Fulham Prep School, Latymer Upper School, Fulham Cross Girls&rsquo; School and Chelsea Independent College.</p>
-							<p>To watch the Showhouse walk through video, <a href="javascript:void(0)">click here.</a></p>
-							<p>To read more about Bishops Row, <a href="javascript:void(0)">click here.</a></p>
-							<p>View more Octagon homes in London, <a href="javascript:void(0)">Eagle House.</a></p>
-							<p><strong>PLOT 1 &mdash; SOLD<br />PLOT 2 &mdash; SOLD<br />PLOT 3 &mdash; SOLD<br />PLOT 4 &mdash; SOLD</strong><strong><br />PLOT 5 &mdash; SOLD<br />PLOT 6 &mdash; SOLD<br />PLOT 7 &mdash; SOLD<br />PLOT 8 &mdash; SOLD<br />PLOT 9 &mdash; SOLD</strong></p>
-						</div>
-						<div class="property__sidebar">
-							<ul>
-								<li>LUXURY NEW HOMES IN FULHAM</li>
-								<li>MAGNIFICENT 4 &amp; 5 BEDROOM HOMES</li>
-								<li>PREMIER LONDON LOCATION</li>
-								<li>VIEWS OVER THE RIVER THAMES</li>
-								<li>4 RECEPTION ROOMS</li>
-								<li>GYM</li>
-								<li>WINE ROOM</li>
-								<li>UNDERFLOOR HEATING</li>
-								<li>PRIVATE ROOF TERRACES/BALCONIES</li>
-								<li>WEST BACKING WALLED GARDEN</li>
-								<li>ADDITIONAL COVERED COURTYARD GARDEN</li>
+				<div class="block-cols block-cols_col-2-1">
+					<div class="col text-cols-2">
+						<p>Octagon presents a luxurious development of just nine new 4 and 5 bedroom townhouses in Bishops Park, a conservation area that runs parallel to the River Thames in Fulham.</p>
+						<p>Designed for family living, these deceptively spacious homes combine high-spec finishes with spectacular terrace and balcony views of the river, along with an outlook onto the adjacent park. The properties are between 4,375 &mdash; 6,150 sq ft, and so offer versatile and flexible accommodation arranged over 5 floors. The generous living space includes 4 formal reception rooms, as well as a gym and TV den / cinema room, which leads onto a covered courtyard garden with a walk-on glass ceiling. These leisure spaces on the lower ground floor could have flexible uses to suit individual requirements.</p>
+						<p>The enviable kitchen/breakfast/family room opens onto a west backing walled garden and features modern linear handle-less cabinets, quartz worktops and top-of-the-range integrated Miele appliances. The formal drawing room has a modern limestone fireplace complemented by a timber flooring and inset carpet and leads onto an additional outside rear terrace.</p>
+						<p>Included in the renowned Octagon specification for this luxury home in Stevenage Road, Fulham is a building management system, boosted Wifi, comfort cooling and part air conditioning. There is intelligent lighting and underfloor heating throughout.</p>
+						<p>Bishops Row is a moments&rsquo; walk from the River Thames and its tow-path access to Putney Bridge. The District Line underground station is nearby. There are 2 further Underground options at Parsons Green and Fulham Broadway. London Victoria is less than 20 minutes away. Fulham&rsquo;s vibrant centre is nearby, with its shops, bars, boutiques and notable restaurants like the Michelin-starred River Caf&eacute;, which is just 0.4 miles/3 minute walk from the property. Fulham also currently boasts the only Michelin starred gastropub in London: the Harwood Arms.</p>
+						<p>Fulham is renowned for its excellent local schooling such as London Oratory School, Fulham Prep School, Latymer Upper School, Fulham Cross Girls&rsquo; School and Chelsea Independent College.</p>
+						<p>To watch the Showhouse walk through video, <a href="javascript:void(0)">click here.</a></p>
+						<p>To read more about Bishops Row, <a href="javascript:void(0)">click here.</a></p>
+						<p>View more Octagon homes in London, <a href="javascript:void(0)">Eagle House.</a></p>
+						<p><strong>PLOT 1 &mdash; SOLD<br />PLOT 2 &mdash; SOLD<br />PLOT 3 &mdash; SOLD<br />PLOT 4 &mdash; SOLD</strong><strong><br />PLOT 5 &mdash; SOLD<br />PLOT 6 &mdash; SOLD<br />PLOT 7 &mdash; SOLD<br />PLOT 8 &mdash; SOLD<br />PLOT 9 &mdash; SOLD</strong></p>
+					</div>
+					<div class="col property__sidebar">
+						<ul>
+							<li>Luxury new homes in fulham</li>
+							<li>Magnificent 4 &amp; 5 bedroom homes</li>
+							<li>Premier london location</li>
+							<li>Views over the river thames</li>
+							<li>4 reception rooms</li>
+							<li>Gym</li>
+							<li>Wine room</li>
+							<li>Underfloor heating</li>
+							<li>Private roof terraces/balconies</li>
+							<li>West backing walled garden</li>
+							<li>Additional covered courtyard garden</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="property__tab tab" data-tab="tab_2">
+
+				<div class="article floors">
+					<!-- floors__wrapper -->
+					<div class="floors__wrapper">
+						<!-- floors__selector col left -->
+						<div class="floors__selector">
+							<ul class="floors__list">
+								<li data-floor="0">Plot 0</li>
+								<li data-floor="1">Plot 1 - RESERVED</li>
+								<li data-floor="2">Plot 2</li>
+								<li data-floor="3">Plot 3</li>
 							</ul>
 						</div>
+						<!-- floors__info col right -->
+						<div class="floors__info">
+							<div data-floor="0">
+								<div class="table">
+									<div class="table__body">
+										<div class="table__row">
+											<div>Cinema</div>
+											<div>8.30m x 4.65m</div>
+											<div>27'3&rdquo; x 15'3&rdquo;</div>
+										</div>
+										<div class="table__row">
+											<div>Gym</div>
+											<div>4.65m x 3.99m</div>
+											<div>15'3&rdquo; x 13'1&rdquo;</div>
+										</div>
+										<div class="table__row">
+											<div>Kitchen/Breakfast/Family</div>
+											<div>8.99m x 5.36m</div>
+											<div>29'6&rdquo; x 17'7&rdquo;</div>
+										</div>
+										<div class="table__row">
+											<div>Pantry</div>
+											<div>3.25m x 1.55m</div>
+											<div>10'8&rdquo; x 5'1&rdquo;</div>
+										</div>
+										<div class="table__row">
+											<div>Study</div>
+											<div>3.20m x 2.85m</div>
+											<div>10'6&rdquo; x 9'4&rdquo;</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-floor="1">
+								<div class="table">
+									<div class="table__body">
+										<div class="table__row">
+											<div>Kitchen/Breakfast/Family</div>
+											<div>8.99m x 5.36m</div>
+											<div>29'6&rdquo; x 17'7&rdquo;</div>
+										</div>
+										<div class="table__row">
+											<div>Pantry</div>
+											<div>3.25m x 1.55m</div>
+											<div>10'8&rdquo; x 5'1&rdquo;</div>
+										</div>
+										<div class="table__row">
+											<div>Study</div>
+											<div>3.20m x 2.85m</div>
+											<div>10'6&rdquo; x 9'4&rdquo;</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-floor="2"></div>
+							<div data-floor="3"></div>
+						</div>
 					</div>
-
+					<!-- floors__details -->
+					<div class="floors__details">
+						<div data-floor="0">
+							<img src="@img/floor-plot-1.jpg" alt="">
+						</div>
+						<div data-floor="1">
+							<img src="@img/floor-plot-2.jpg" alt="">
+						</div>
+						<div data-floor="2">
+							<img src="@img/floor-plot-1.jpg" alt="">
+						</div>
+						<div data-floor="3">
+							<img src="@img/floor-plot-2.jpg" alt="">
+						</div>
+					</div>
 				</div>
+
 			</div>
 
-			<div class="property__tab">
-				tab 2
+			<div class="property__tab tab" data-tab="tab_3">
+
+				<div class="article">
+					<h3>FULHAM</h3>
+					<p>Nestled between Chelsea and Putney, whilst sitting perfectly near Sloane Square and Knightsbridge, genteel Fulham is one of London&rsquo;s safe havens.</p>
+					<p>The Fulham of today is a firmly established upmarket location, packed with shops, bars, boutiques and restaurants. It&rsquo;s thoughtfully and spaciously laid out, and a real delight for locals is the picturesque commute either along the River Thames or through Eel Brook Common. Numerous young couples and City professionals have made the move into this leafy corner of London, and its attractive properties and child friendly nature have also lured numerous families to the area, who often remain for decades.</p>
+					<p>Close by is beautiful Bishops Park, which stretches along the river with views over to Putney. The park has a large number of tennis courts, a bowling green, a paddling pool, playgrounds and a caf&eacute;, as well as being home to Fulham Palace.</p>
+					<p>Fulham is on the Wimbledon branch of the District Line, with a choice of three stops for Fulham on the Underground (all Zone 2); Parsons Green, Putney Bridge and Fulham Broadway. London Victoria takes less than 20 minutes to reach.</p>
+					<p>Families are attracted to the excellent local schooling , which includes the London Oratory School, Fulham Prep, Thomas&rsquo;s Fulham, Fulham Cross, The Moat, St Pauls, L &lsquo;Ecole Francaise, Latymer Upper, Godolphin and Latymer, Sinclair House and Chelsea Independent College.</p>
+					<h4>SCHOOLS</h4>
+					<ul>
+						<li>Fulham Cross Girls&rsquo; School</li>
+						<li>London Oratory School</li>
+						<li>Fulham Prep School</li>
+						<li>Latymer Upper School</li>
+						<li>Chelsea Independent College</li>
+					</ul>
+					<h4>LEISURE</h4>
+					<ul>
+						<li>Bishops Park</li>
+						<li>Hurlingham Club</li>
+						<li>Fulham Palace</li>
+						<li>Chelsea Harbour</li>
+					</ul>
+					<h4>TRAVEL</h4>
+					<ul>
+						<li>London Victoria &mdash; circa 20 minutes by train</li>
+						<li>M4 &mdash; circa 15 minutes by road</li>
+					</ul>
+				</div>
+
 			</div>
 
-			<div class="property__tab">
-				tab 3
+			<div class="text-uppercase property__footer">
+				<h3>For further information</h3>
+				<p><strong>OCTAGON</strong> - 020 8481 7500 / <strong>STRUTT & PARKER</strong> - 020 7731 7100 / <strong>SHOWHOUSE</strong> - 020 3417 4610</p>
 			</div>
-
 
 		</div>
 	</div>

@@ -69,9 +69,39 @@
 	// .btn_tab
 	&_tab {
 		background: $white;
+		color: $btn-grey;
 
-		&.tab-active {
+		@include on-event {
 			color: $brand-color-primary;
+		}
+
+		&.active {
+			color: $brand-color-primary;
+		}
+	}
+
+	// .btn_favourites
+	&_favourites {
+		margin-top: -2px;
+
+		svg {
+			display: block;
+			width: 20px;
+			height: 20px;
+			fill: $light-grey-5;
+			transition: $transition-default;
+		}
+
+		@include on-event {
+			svg {
+				fill: $brand-color-primary;
+			}
+		}
+
+		&.active {
+			svg {
+				fill: $brand-color-primary;
+			}
 		}
 	}
 }

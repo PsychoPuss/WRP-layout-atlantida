@@ -62,7 +62,7 @@
 	flex-direction: column;
 	margin-left: -$min-padding;
 	margin-right: -$min-padding;
-	margin: 0 auto 40px;
+	// margin: 0 auto 40px;
 
 	@include respond-to(md) {
 		flex-direction: row;
@@ -70,35 +70,43 @@
 
 	@include respond-to(lg) {
 		max-width: $max-width-cols;
+		margin: 0 auto 40px;
 	}
 
-	& > div {
+	& > .col {
 		font-size: 15px;
 		padding: 0 $min-padding;
 	}
 
+	// .block-cols_col-2
+	&_col-2 {
+		& > .col {
+			@include respond-to(md) {
+				width: 50%;
+			}
+		}
+	}
+
+	// .block-cols_col-2-1
 	&_col-2-1 {
-		& > div {
+		& > .col {
 			margin-bottom: 20px;
 
 			@include respond-to(md) {
 				width: 66.6667%;
 				margin-bottom: inherit;
 
-				& + div {
+				& + .col {
 					width: 33.3333%;
 				}
 			}
 		}
 	}
+}
 
-	&_col-2 {
-		& > div {
-			@include respond-to(md) {
-				width: 50%;
-			}
-		}
-	}
+.article {
+	max-width: $max-width-cols;
+	margin: 0 auto 40px;
 }
 
 .text-cols-2 {

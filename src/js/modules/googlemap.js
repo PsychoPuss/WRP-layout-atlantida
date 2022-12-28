@@ -111,20 +111,10 @@ loader.load().then(() => {
 	};
 
 	let updateMapHeight = () => {
-		console.log('1');
-		// if (mapCanvas.classList.contains("map__property-all")) {
-		console.log('2');
-		mapCanvas.style.height = `${window.innerHeight - mapCanvas.getBoundingClientRect().top}px`;
-		// }
+		if (mapCanvas.classList.contains("map__property-all")) {
+			mapCanvas.style.height = `${window.innerHeight - mapCanvas.getBoundingClientRect().top}px`;
+		}
 	};
-
-	let getMarkers = () => {
-		return markers;
-	};
-
-	// let refreshMaps = () => {
-	// 	clearMarkers();
-	// };
 
 	let resetMarkers = () => {
 		let elements = Object.keys(markers);
@@ -142,16 +132,12 @@ loader.load().then(() => {
 		markers = null;
 	};
 
-	/**
-	 *
-	 *
-	 *
-	 *
-	 */
-	// objects list
-	const objects = document.querySelectorAll(".property-list__item");
+	let getMarkers = () => {
+		return markers;
+	};
 
-	//! если есть список объектов
+	// object list on map
+	const objects = document.querySelectorAll(".property-list__item");
 	if (objects.length > 0) {
 		const bounds = new google.maps.LatLngBounds(); // autocentering
 
@@ -168,17 +154,11 @@ loader.load().then(() => {
 					icon: icons["list"].icon,
 					map: map,
 				});
-
 				bounds.extend({ lat: pLat, lng: pLng });
 			}
 
 			// show property card and center map
 			markers[pId].addListener("click", () => {
-				// $("[data-view=map]").removeClass("active");
-				// mapToggle = $("#" + sPropid + " [data-view=map]");
-				// mapToggle.addClass("active");
-
-				// показать карточку
 				displayPropertyOnMap(pId);
 			});
 		});

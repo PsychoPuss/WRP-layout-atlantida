@@ -183,3 +183,17 @@
 	height: 100vh;
 	overflow: hidden;
 }
+
+// animation
+.blink {
+	animation: fadeEffect 0.8s;
+}
+
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

@@ -3,6 +3,8 @@ functions.stickyHeader();
 functions.parallaxInit();
 functions.careersTop();
 functions.formSelectInit();
+functions.toggleTab();
+functions.toggleFloor();
 
 import "./modules/googlemap.js";
 import "./modules/swiper.js";
