@@ -55,6 +55,7 @@
 			height: 100%;
 		}
 
+		// .swiper-slide_overlay
 		&_overlay {
 			a {
 				&::before {
@@ -68,6 +69,12 @@
 					z-index: 11;
 				}
 			}
+		}
+
+		// youtube embed
+		iframe {
+			width: 100%;
+			height: 100%;
 		}
 	}
 

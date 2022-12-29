@@ -61,39 +61,93 @@
 
 
 	<div class="tabs-header">
-		<div class="swiper swiper-main">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image: url(img/interiors-1.jpg);">
-					<a href="property_item.html"></a>
+		<div class="tab" data-tab="tab_overview">
+			<div class="swiper swiper-main">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image: url(img/interiors-1.jpg);">
+						<a href="property_item.html"></a>
+					</div>
+					<div class="swiper-slide" style="background-image: url(img/interiors-2.jpg);">
+						<a href="property_item.html"></a>
+					</div>
+					<div class="swiper-slide" style="background-image: url(img/interiors-3.jpg);">
+						<a href="property_item.html"></a>
+					</div>
 				</div>
-				<div class="swiper-slide" style="background-image: url(img/interiors-2.jpg);">
-					<a href="property_item.html"></a>
-				</div>
-				<div class="swiper-slide" style="background-image: url(img/interiors-3.jpg);">
-					<a href="property_item.html"></a>
-				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
-			<div class="swiper-pagination"></div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
+
+
 		</div>
+		<div class="tab" data-tab="tab_plans">
+			<div class="swiper swiper-main">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image: url(img/swiper-main-property-carousel-1.jpg);">
+						<a href="property_item.html">
+							<div class="slide-desc">
+								<div class="slide-desc__wrapper">
+									<!-- тут не h2, как на главной, а h3 -->
+									<h3 class="slide-desc__name">
+										Eagle House
+									</h3>
+									<div class="slide-desc__address">
+										Wimbledon Village,<br>London, SW19 5EF
+									</div>
+									<div class="slide-desc__price">
+										£1,750,000
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide" style="background-image: url(img/swiper-main-carousel-3.jpg);">
+						<a href="property_item.html"></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
 
-		<div class="carousel-separator"></div>
 
+		</div>
+		<div class="tab" data-tab="tab_map">
+			<div class="map map_property-item-header">
+				<div id="map" class="map__property-item" data-point='{"lat":"51.337798","lng":"-0.496191","icon":"active"}'></div>
+			</div>
+		</div>
+		<div class="tab" data-tab="tab_video">
+			<div class="swiper swiper-main">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/4NENuvQ0dxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+
+
+		</div>
 	</div>
 
+	<div class="carousel-separator"></div>
 
 	<div class="container">
 		<div class="content">
 
 			<div class="tab-buttons">
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_1">Overview</a>
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_2">Floor plans</a>
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_3">Local area</a>
-				<a href="#" class="btn btn_tab" data-tab="tab_4">Map</a> <!-- "#" – чтоб был переход наверх к карте в шапке (для таба с картой у них меняется только верхний контент, текста нет) -->
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_overview">Overview</a>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_plans">Floor plans</a>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_area">Local area</a>
+				<a href="#" class="btn btn_tab" data-tab="tab_map">Map</a> <!-- "#" – чтоб был переход наверх к карте в шапке (для таба с картой у них меняется только верхний контент, текста нет) -->
 				<a href="img/swiper-main-carousel-1.jpg" class="btn btn_tab">Brochure</a>
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_5">Video</a>
-				<a href="javascript:void(0)" class="btn btn_tab btn_favourites" id="property-5978" title="Add to Favourites"> <!-- класс active, если уже в избранном -->
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_video">Video</a>
+				<a href="javascript:void(0)" class="btn btn_tab btn_favourites" id="property-5978" title="Add to Favourites">
+					<!-- класс active, если уже в избранном -->
 					<svg>
 						<use xlink:href="#star"></use>
 					</svg>
@@ -115,7 +169,7 @@
 				<a href="contacts.html" class="btn btn_default">Register your interest</a>
 			</div>
 
-			<div class="property__tab tab" data-tab="tab_1">
+			<div class="tab" data-tab="tab_overview">
 
 				<div class="block-cols block-cols_col-2-1">
 					<div class="col text-cols-2">
@@ -149,7 +203,7 @@
 
 			</div>
 
-			<div class="property__tab tab" data-tab="tab_2">
+			<div class="tab" data-tab="tab_plans">
 
 				<div class="article floors">
 					<!-- floors__wrapper -->
@@ -240,7 +294,7 @@
 
 			</div>
 
-			<div class="property__tab tab" data-tab="tab_3">
+			<div class="tab" data-tab="tab_area">
 
 				<div class="article">
 					<h3>FULHAM</h3>
@@ -295,6 +349,27 @@
 		<div class="footer__social">
 			<ul class="social-list">
 				<li class="social-item">
+					<a href="#" title="Facebook">
+						<svg>
+							<use xlink:href="#social-fb"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="#" title="Twitter">
+						<svg>
+							<use xlink:href="#social-tw"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="social-item">
+					<a href="#" title="LinkedIn">
+						<svg>
+							<use xlink:href="#social-li"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="social-item">
 					<a href="#" title="Вконтакте">
 						<svg>
 							<use xlink:href="#social-vk"></use>
@@ -302,23 +377,16 @@
 					</a>
 				</li>
 				<li class="social-item">
+					<a href="#" title="Instagram">
+						<svg>
+							<use xlink:href="#social-in"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="social-item">
 					<a href="#" title="YouTube">
 						<svg>
 							<use xlink:href="#social-yt"></use>
-						</svg>
-					</a>
-				</li>
-				<li class="social-item">
-					<a href="#" title="Instagram">
-						<svg>
-							<use xlink:href="#social-inst"></use>
-						</svg>
-					</a>
-				</li>
-				<li class="social-item">
-					<a href="#" title="Facebook">
-						<svg>
-							<use xlink:href="#social-fb"></use>
 						</svg>
 					</a>
 				</li>

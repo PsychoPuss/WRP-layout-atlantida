@@ -174,16 +174,26 @@ loader.load().then(() => {
 		};
 	}
 
-	// office address on contacts page
-	if (mapCanvas.dataset.office) {
-		let officeData = JSON.parse(mapCanvas.dataset.office),
-			office = { lat: parseFloat(officeData.lat), lng: parseFloat(officeData.lng) },
+	// single point address on contacts/property page
+	if (mapCanvas.dataset.point) {
+		let mapOptions = {
+			mapTypeControlOptions: {
+				position: google.maps.ControlPosition.BOTTOM_CENTER,
+				mapTypeIds: [google.maps.MapTypeId.ROADMAP, "customStyle"],
+			},
+			fullscreenControlOptions: {
+				position: google.maps.ControlPosition.BOTTOM_RIGHT,
+			},
+		};
+		let pointData = JSON.parse(mapCanvas.dataset.point),
+			point = { lat: parseFloat(pointData.lat), lng: parseFloat(pointData.lng) },
 			marker = new google.maps.Marker({
-				position: office,
-				icon: icons["logo"].icon,
+				position: point,
+				icon: icons[pointData.icon].icon,
 				map: map,
 			});
 		map.setZoom(15);
-		map.setCenter(office);
+		map.setCenter(point);
+		map.setOptions(mapOptions);
 	}
 });

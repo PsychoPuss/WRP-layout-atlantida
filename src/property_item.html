@@ -9,21 +9,34 @@
 	})
 
 	<div class="tabs-header">
-		@@include('html/swiper-main-interiors.html', {})
+		<div class="tab" data-tab="tab_overview">
+			@@include('html/swiper-main-interiors.html', {"separator": "none"})
+		</div>
+		<div class="tab" data-tab="tab_plans">
+			@@include('html/swiper-main-property.html', {"separator": "none"})
+		</div>
+		<div class="tab" data-tab="tab_map">
+			@@include('html/property-header-map.html')
+		</div>
+		<div class="tab" data-tab="tab_video">
+			@@include('html/swiper-main-youtube-video.html', {"separator": "none"})
+		</div>
 	</div>
 
+	<div class="carousel-separator"></div>
 
 	<div class="container">
 		<div class="content">
 
 			<div class="tab-buttons">
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_1">Overview</a>
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_2">Floor plans</a>
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_3">Local area</a>
-				<a href="#" class="btn btn_tab" data-tab="tab_4">Map</a> <!-- "#" – чтоб был переход наверх к карте в шапке (для таба с картой у них меняется только верхний контент, текста нет) -->
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_overview">Overview</a>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_plans">Floor plans</a>
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_area">Local area</a>
+				<a href="#" class="btn btn_tab" data-tab="tab_map">Map</a> <!-- "#" – чтоб был переход наверх к карте в шапке (для таба с картой у них меняется только верхний контент, текста нет) -->
 				<a href="@img/swiper-main-carousel-1.jpg" class="btn btn_tab">Brochure</a>
-				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_5">Video</a>
-				<a href="javascript:void(0)" class="btn btn_tab btn_favourites" id="property-5978" title="Add to Favourites"> <!-- класс active, если уже в избранном -->
+				<a href="javascript:void(0)" class="btn btn_tab" data-tab="tab_video">Video</a>
+				<a href="javascript:void(0)" class="btn btn_tab btn_favourites" id="property-5978" title="Add to Favourites">
+					<!-- класс active, если уже в избранном -->
 					<svg>
 						<use xlink:href="#star"></use>
 					</svg>
@@ -45,7 +58,7 @@
 				<a href="contacts.html" class="btn btn_default">Register your interest</a>
 			</div>
 
-			<div class="property__tab tab" data-tab="tab_1">
+			<div class="tab" data-tab="tab_overview">
 
 				<div class="block-cols block-cols_col-2-1">
 					<div class="col text-cols-2">
@@ -79,7 +92,7 @@
 
 			</div>
 
-			<div class="property__tab tab" data-tab="tab_2">
+			<div class="tab" data-tab="tab_plans">
 
 				<div class="article floors">
 					<!-- floors__wrapper -->
@@ -170,7 +183,7 @@
 
 			</div>
 
-			<div class="property__tab tab" data-tab="tab_3">
+			<div class="tab" data-tab="tab_area">
 
 				<div class="article">
 					<h3>FULHAM</h3>
