@@ -154,7 +154,7 @@
 		color: $href-color;
 
 		&::after {
-			transition: $transition-default;
+			transition: color $transition-default;
 			background: url($menu-arrow-primary) center no-repeat;
 		}
 	}
@@ -167,7 +167,7 @@
 		position: absolute;
 		top: 50%;
 		background: url($menu-arrow-grey) center no-repeat;
-		transition: $transition-default;
+		transition: color $transition-default;
 	}
 
 	// .btn-news_prev

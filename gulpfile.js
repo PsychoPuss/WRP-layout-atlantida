@@ -40,7 +40,7 @@ const mainTasks = gulp.parallel(vendors, copy, html, scss, js, img);
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, index, gulp.parallel(watcher, server));
-const build = gulp.series(reset, mainTasks, index, deploy);
+const build = gulp.series(reset, mainTasks, index);
 
 // Экспорт сценариев
 export { dev };

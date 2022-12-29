@@ -2310,9 +2310,9 @@ a:hover {
   font-size: .85rem!important
 }
 a {
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
+  -webkit-transition: color .25s ease-in-out;
+  -o-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out
 }
 p {
   line-height: 1.7;
@@ -3062,9 +3062,9 @@ ol {
   padding-top: 6px;
   padding-bottom: 7px;
   margin-left: -1px;
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
+  -webkit-transition: background-color .25s ease-in-out;
+  -o-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out
 }
 .form-footer__button::after {
   content: "";
@@ -3277,9 +3277,9 @@ input[type=checkbox]:disabled {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
+  -webkit-transition: background .25s ease-in-out;
+  -o-transition: background .25s ease-in-out;
+  transition: background .25s ease-in-out
 }
 .btn_large {
   font-size: 15px;
@@ -3339,9 +3339,9 @@ input[type=checkbox]:disabled {
   width: 20px;
   height: 20px;
   fill: #ccc;
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out
 }
 .btn_favourites:active svg,
 .btn_favourites:focus svg,
@@ -3880,9 +3880,9 @@ input[type=checkbox]:disabled {
 .btn-news:active::after,
 .btn-news:focus::after,
 .btn-news:hover::after {
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  -webkit-transition: color .25s ease-in-out;
+  -o-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCA1Ij48cGF0aCBmaWxsPSIjYzQ1ODI0IiBkPSJNOS45OTkuMzYxYS4zNDcuMzQ3IDAgMCAwLS4xMTQtLjI1NS40MS40MSAwIDAgMC0uNTUgMEw0Ljk5OSA0LjEyOS42NjQuMTA1YS40MTEuNDExIDAgMCAwLS41NSAwIC4zNDMuMzQzIDAgMCAwIDAgLjUxbDQuNjExIDQuMjc4YS40MS40MSAwIDAgMCAuNTUgMEw5Ljg4Ni42MTVhLjM0Ny4zNDcgMCAwIDAgLjExMy0uMjU0WiIgLz48L3N2Zz4=) center no-repeat
 }
 .btn-news::after {
@@ -3893,9 +3893,9 @@ input[type=checkbox]:disabled {
   position: absolute;
   top: 50%;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMCA1Ij48cGF0aCBmaWxsPSIjNGM0ZDRlIiBkPSJNOS45OTkuMzYxYS4zNDcuMzQ3IDAgMCAwLS4xMTQtLjI1NS40MS40MSAwIDAgMC0uNTUgMEw0Ljk5OSA0LjEyOS42NjQuMTA1YS40MTEuNDExIDAgMCAwLS41NSAwIC4zNDMuMzQzIDAgMCAwIDAgLjUxbDQuNjExIDQuMjc4YS40MS40MSAwIDAgMCAuNTUgMEw5Ljg4Ni42MTVhLjM0Ny4zNDcgMCAwIDAgLjExMy0uMjU0WiIgZGF0YS1uYW1lPSJQYXRoIDEiLz48L3N2Zz4=) center no-repeat;
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out
+  -webkit-transition: color .25s ease-in-out;
+  -o-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out
 }
 .btn-news_prev::after {
   left: 0;
