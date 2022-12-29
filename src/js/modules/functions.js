@@ -109,7 +109,9 @@ export function toggleTab() {
 			}
 		});
 	});
-	document.querySelector(".btn.btn_tab").click();
+	if (tabButtons.length > 0) {
+		document.querySelector(".btn.btn_tab").click();
+	}
 }
 
 export function toggleFloor() {
@@ -141,5 +143,7 @@ export function toggleFloor() {
 			floorDetails.classList.add("active");
 		});
 	});
-	document.querySelector(".floors__list>li").click();
+	if (floorButtons.length > 0) {
+		document.querySelector(".floors__list>li").click();
+	}
 }
