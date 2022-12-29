@@ -3439,6 +3439,7 @@ input[type=checkbox]:disabled {
 }
 .property-list__desc {
   padding: .5rem 1rem;
+  padding: 17px 15px;
   background: #f3f3f3;
   -webkit-box-flex: 1;
   -ms-flex: 1;
