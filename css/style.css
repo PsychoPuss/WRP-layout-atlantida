@@ -2237,6 +2237,9 @@ body {
 .content_wide {
   max-width: 100%
 }
+.content_1200 {
+  max-width: 1200px
+}
 body {
   color: #565656;
   font: normal 100%/1.4 Montserrat,Helvetica,"Open Sans",Arial,sans-serif
