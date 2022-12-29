@@ -3199,20 +3199,20 @@ loader.load().then(() => {
 	const icons = {
 		list: {
 			icon: {
-				url: "/img/map-marker.png",
+				url: "img/map-marker.png",
 				scaledSize: new google.maps.Size(24, 24),
 				anchor: new google.maps.Point(12, 12),
 			},
 		},
 		logo: {
 			icon: {
-				url: "/img/map-marker-logo.png",
+				url: "img/map-marker-logo.png",
 				scaledSize: new google.maps.Size(40, 40),
 			},
 		},
 		active: {
 			icon: {
-				url: "/img/map-marker-active.png",
+				url: "img/map-marker-active.png",
 				scaledSize: new google.maps.Size(48, 48),
 				anchor: new google.maps.Point(24, 24),
 			},
