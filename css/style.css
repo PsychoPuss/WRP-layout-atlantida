@@ -2586,6 +2586,19 @@ ol {
   transform: translateX(-50%);
   width: 160px
 }
+.header__logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: #fff;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+  opacity: .5;
+  z-index: -1
+}
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
