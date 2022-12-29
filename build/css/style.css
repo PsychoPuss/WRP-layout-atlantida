@@ -2626,7 +2626,10 @@ ol {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom: 0
+  border-bottom: 0;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none
 }
 .nav-filter {
   text-align: center

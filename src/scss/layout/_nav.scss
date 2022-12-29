@@ -131,6 +131,7 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			border-bottom: 0;
+			transition: none;
 			// padding: 10px 10px 5px;
 
 			@include respond-to(md) {
