@@ -28,7 +28,7 @@
 	}
 
 	& + .container {
-		padding-top: 125px;
+		padding-top: 125px !important;
 
 		.content {
 			padding-top: 0;
@@ -90,6 +90,19 @@
 		left: 50%;
 		transform: translateX(-50%);
 		width: 160px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -5%;
+			width: 110%;
+			height: 110%;
+			background: #fff;
+			filter: blur(12px);
+			opacity: 0.5;
+			z-index: -1;
+		}
 
 		@include respond-to(md) {
 			position: relative;

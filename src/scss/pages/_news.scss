@@ -76,7 +76,7 @@
 	&__row {
 		display: flex;
 		flex-direction: column;
-		max-width: calc($max-width * 2);
+		// max-width: calc($max-width * 2);
 		margin: 0 auto;
 
 		@include respond-to(lg) {

@@ -27,19 +27,20 @@
 	padding-top: 50px;
 	padding-bottom: 40px;
 	flex: 1;
+
 	@include respond-to(md) {
 		padding-left: $max-padding; /* 3 */
 		padding-right: $max-padding; /* 3 */
 	}
 
 	&_wide {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 
 	&_short {
-		padding-top: 0;
-		padding-bottom: 0;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
 	}
 }
 
