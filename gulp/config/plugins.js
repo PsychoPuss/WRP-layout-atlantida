@@ -1,9 +1,10 @@
-import replace from "gulp-replace"; // Поиск и замена
-import plumber from "gulp-plumber"; // Обработка ошибок
-import notify from "gulp-notify"; // Сообщения (подсказки)
-import browsersync from "browser-sync"; // Локальный сервер
-import newer from "gulp-newer"; // Проверка обновления
-import ifPlugin from "gulp-if"; // if
+import replace from "gulp-replace";			// Поиск и замена
+import plumber from "gulp-plumber";			// Обработка ошибок
+import notify from "gulp-notify";				// Сообщения (подсказки)
+import browsersync from "browser-sync";	// Локальный сервер
+import newer from "gulp-newer";					// Проверка обновления
+import ifPlugin from "gulp-if";					// if
+import fs from "fs";										// filesystem
 
 // Экспортируем объект
 export const plugins = {
@@ -12,5 +13,6 @@ export const plugins = {
 	notify: notify,
 	browsersync: browsersync,
 	newer: newer,
-	if: ifPlugin
-}
+	if: ifPlugin,
+	fs: fs,
+};
