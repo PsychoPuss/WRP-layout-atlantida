@@ -3824,7 +3824,6 @@ input[type=checkbox]:disabled {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 2800px;
   margin: 0 auto
 }
 .news-list__col {
