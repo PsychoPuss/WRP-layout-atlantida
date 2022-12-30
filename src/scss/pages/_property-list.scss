@@ -2,14 +2,34 @@
 	margin: 40px 0;
 	display: grid;
 	gap: 6px;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(1, 1fr);
+	// grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
 	// .property-list_white
 	&_white {
 	}
 
-	@include respond-to(xl) {
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	@include respond-to(md) {
+		grid-template-columns: repeat(2, 1fr);
+		// grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+
+	@include respond-to(lg) {
+		grid-template-columns: repeat(3, 1fr);
+		// grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+
+	@include respond-to(xl-prop) {
+		grid-template-columns: repeat(4, 1fr);
+		// grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+
+	@include respond-to(xxl) {
+		// grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	}
+
+	@include respond-to(xxxl) {
+		grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 	}
 
 	// .property-list__item
@@ -24,21 +44,37 @@
 		position: relative;
 
 		img {
-			height: 280px;
+			height: 220px;
 			width: 100%;
 			object-fit: cover;
 
+
+			@include respond-to(sm) {
+				height: 280px;
+			}
 			@include respond-to(xm) {
-				height: 300px;
+				height: 380px;
 			}
 			@include respond-to(md) {
-				height: 250px;
+				height: 240px;
+			}
+			@include respond-to(lg) {
+				height: 205px;
 			}
 			@include respond-to(xl) {
 				height: 300px;
 			}
+			@include respond-to(xl-prop) {
+				height: 260px;
+			}
+			@include respond-to(xxl) {
+				height: 310px;
+			}
+			@include respond-to(xxxl) {
+				height: 390px;
+			}
 
-			@include when-inside('.map__info_small') {
+			@include when-inside(".map__info_small") {
 				height: 250px;
 			}
 		}
@@ -46,11 +82,12 @@
 	// .property-list__desc
 	&__desc {
 		padding: 0.5rem 1rem;
+		padding: 17px 15px;
 		background: $light-grey-3;
 		flex: 1;
 		display: flex;
 
-		@include when-inside('.property-list_white') {
+		@include when-inside(".property-list_white") {
 			background: $white;
 		}
 	}
@@ -67,11 +104,12 @@
 		color: $header-color;
 		margin: 0;
 		text-transform: uppercase;
+		font-size: 22px;
 		line-height: 1.1;
 
 		@include respond-to(md) {
 			@include respond-to(lg, "max") {
-				font-size: 1rem;
+				font-size: 1.4rem;
 			}
 		}
 	}
@@ -79,7 +117,7 @@
 	&__address {
 		color: $dark-grey-1;
 		text-transform: uppercase;
-		font-size: 15px;
+		font-size: 16px;
 		margin: 5px 0;
 	}
 	// .property-list-desc__price
@@ -104,7 +142,7 @@
 		justify-content: center;
 	}
 
-	@include when-inside('.map__info_small') {
+	@include when-inside(".map__info_small") {
 		display: none;
 	}
 

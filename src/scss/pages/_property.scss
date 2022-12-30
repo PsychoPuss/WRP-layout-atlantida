@@ -23,6 +23,16 @@
 		padding: 23px 10px 5px;
 		border: 2px solid $dark-grey-1;
 	}
+	// .property__award
+	&__award {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+
+		img {
+			max-width: 250px;
+		}
+	}
 	// .property__date
 	&__date {
 		margin-bottom: 0;
