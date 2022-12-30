@@ -53,6 +53,7 @@
 	// .news-feed-desc__name
 	&__name {
 		text-transform: uppercase;
+		font-size: 20px;
 
 		@include respond-to(md) {
 			@include respond-to(lg, "max") {

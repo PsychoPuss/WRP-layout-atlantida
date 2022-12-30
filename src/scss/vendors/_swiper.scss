@@ -214,6 +214,10 @@
 	&__wrapper {
 		background: $white;
 		padding: 8px 40px;
+
+		@include when-inside('.swiper-3-per-row') {
+			padding: 8px 16px;
+		}
 	}
 
 	// .slide-desc__name
@@ -225,7 +229,7 @@
 
 		// h2.slide-desc__name
 		@include unify-parent("h2") {
-			font-size: 30px;
+			font-size: 24px;
 		}
 		// h3.slide-desc__name
 		@include unify-parent("h3") {
