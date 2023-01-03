@@ -8,6 +8,7 @@ export const svgsprite = () => {
 		mode: {
 			symbol: {
 				sprite: "../svg.html",
+				// example: true
 			},
 		},
 		svg: {
