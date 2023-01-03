@@ -4448,13 +4448,13 @@ input[type=checkbox]:disabled {
   }
   .menu__item_childs {
     position: relative;
-    padding-right: 25px
+    padding-right: 18px
   }
   .menu__item_childs::after {
     content: "";
     display: block;
     position: absolute;
-    right: 7px;
+    right: 0;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
