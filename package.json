@@ -20,6 +20,7 @@
     "gulp-replace": "^1.1.3",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^2.0.1",
     "gulp-version-number": "^0.2.4",
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.1.1",
@@ -320,7 +321,8 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "svgsprite": "gulp svgsprite"
   },
   "author": "Evgeny Ilyin",
   "license": "ISC",

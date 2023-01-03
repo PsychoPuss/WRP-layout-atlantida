@@ -23,6 +23,7 @@ import { html } from "./gulp/tasks/html.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { img } from "./gulp/tasks/img.js";
+import { svgsprite } from "./gulp/tasks/svgsprite.js";
 import { index } from "./gulp/tasks/index.js";
 import { deploy } from "./gulp/tasks/deploy.js";
 
@@ -45,6 +46,7 @@ const build = gulp.series(reset, mainTasks, index);
 // Экспорт сценариев
 export { dev };
 export { build };
+export { svgsprite };
 export { index };
 export { deploy };
 
