@@ -3219,6 +3219,9 @@ loader.load().then(() => {
 		},
 	};
 
+	/**
+	 * Create a new map in the mapCanvas element
+	 */
 	let initMap = () => {
 		map = new google.maps.Map(mapCanvas, {
 			mapTypeId: "customStyle",
@@ -3230,6 +3233,9 @@ loader.load().then(() => {
 	};
 	initMap();
 
+	/**
+	 * Display map with all properties icons
+	 */
 	let showAllPropertiesMap = () => {
 		const items = document.querySelectorAll("[data-view=map]");
 		items.forEach((i) => {
@@ -3247,6 +3253,9 @@ loader.load().then(() => {
 	};
 	showAllPropertiesMap();
 
+	/**
+	 * Hide map with all properties icons
+	 */
 	let hideAllPropertiesMap = () => {
 		const items = document.querySelectorAll("[data-view=map]");
 		items.forEach((i) => {
@@ -3259,6 +3268,10 @@ loader.load().then(() => {
 		document.body.style.overflowY = "";
 	};
 
+	/**
+	 * Add property locations to the current map
+	 * @param {string} pId — property id (e.g. 'property-1234')
+	 */
 	let displayPropertyOnMap = (pId) => {
 		resetMarkers();
 		markers[pId].setIcon(icons["active"].icon);
@@ -3278,12 +3291,18 @@ loader.load().then(() => {
 		});
 	};
 
+	/**
+	 * Calculate map height on all properties page on map init and window resize
+	 */
 	let updateMapHeight = () => {
 		if (mapCanvas.classList.contains("map__property-all")) {
 			mapCanvas.style.height = `${window.innerHeight - mapCanvas.getBoundingClientRect().top}px`;
 		}
 	};
 
+	/**
+	 * Reset markers to default state
+	 */
 	let resetMarkers = () => {
 		let elements = Object.keys(markers);
 		elements.forEach((i) => {
@@ -3292,6 +3311,9 @@ loader.load().then(() => {
 		});
 	};
 
+	/**
+	 * Remove markers
+	 */
 	let clearMarkers = () => {
 		let elements = Object.keys(markers);
 		elements.forEach((i) => {
@@ -3300,11 +3322,9 @@ loader.load().then(() => {
 		markers = null;
 	};
 
-	let getMarkers = () => {
-		return markers;
-	};
-
-	// object list on map
+	/**
+	 * Object list on map for all properties page
+	 */
 	const objects = document.querySelectorAll(".property-list__item");
 	if (objects.length > 0) {
 		const bounds = new google.maps.LatLngBounds(); // autocentering
@@ -3342,7 +3362,9 @@ loader.load().then(() => {
 		};
 	}
 
-	// single point address on contacts/property page
+	/**
+	 * Single point address on contacts/property page
+	 */
 	if (mapCanvas.dataset.point) {
 		let mapOptions = {
 			mapTypeControlOptions: {
