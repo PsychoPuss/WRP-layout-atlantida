@@ -319,7 +319,8 @@
   },
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build --build"
+    "build": "gulp build --build",
+    "deploy": "gulp deploy"
   },
   "author": "Evgeny Ilyin",
   "license": "ISC",

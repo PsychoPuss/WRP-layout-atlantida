@@ -27,21 +27,25 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		list-style: none;
+		gap: 15px 20px;
 		padding: 0;
 		margin: 0;
 
 		@include respond-to(md) {
 			flex-direction: row;
+			gap: 10px 20px;
 		}
 	}
 
 	// .menu__item
 	&__item {
 		margin: 0;
-		padding: 7px 10px 3px;
+		padding: 0;
+		// padding: 7px 10px 3px;
 
 		@include respond-to(md) {
-			padding: 0 12px;
+			padding: 0;
+			// padding: 0 12px;
 			&:hover {
 				a {
 					color: $brand-color-primary;
@@ -59,6 +63,8 @@
 		&_childs {
 			.menu__list {
 				margin-top: 5px;
+				gap: 0;
+
 				.menu__item {
 					padding: 0;
 					a {
