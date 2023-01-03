@@ -34,7 +34,7 @@
     "webpack-stream": "^7.0.0",
     "wnumb": "^1.2.0"
   },
-  "name": "atlantida",
+  "name": "gulp-2022",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "type": "module",
