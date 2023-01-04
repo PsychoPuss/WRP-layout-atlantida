@@ -26,6 +26,7 @@ import { img } from "./gulp/tasks/img.js";
 import { svgsprite } from "./gulp/tasks/svgsprite.js";
 import { index } from "./gulp/tasks/index.js";
 import { deploy } from "./gulp/tasks/deploy.js";
+import { zip } from "./gulp/tasks/zip.js";
 
 // Наблюдатель за изменениями
 function watcher() {
@@ -41,7 +42,8 @@ const mainTasks = gulp.parallel(vendors, copy, html, scss, js, img);
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, index, gulp.parallel(watcher, server));
-const build = gulp.series(reset, mainTasks, index);
+const build = gulp.series(reset, mainTasks, index, deploy);
+const deployZIP = gulp.series(reset, mainTasks, index, zip);
 
 // Экспорт сценариев
 export { dev };
@@ -49,6 +51,7 @@ export { build };
 export { svgsprite };
 export { index };
 export { deploy };
+export { deployZIP };
 
 // Выполнение сценария по-умолчанию
 gulp.task("default", dev);

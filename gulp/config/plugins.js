@@ -4,7 +4,8 @@ import notify from "gulp-notify";				// Сообщения (подсказки)
 import browsersync from "browser-sync";	// Локальный сервер
 import newer from "gulp-newer";					// Проверка обновления
 import ifPlugin from "gulp-if";					// if
-import fs from "fs";										// filesystem
+import htmlbeautify from "gulp-html-beautify";
+import { deleteAsync } from "del";
 
 // Экспортируем объект
 export const plugins = {
@@ -14,5 +15,6 @@ export const plugins = {
 	browsersync: browsersync,
 	newer: newer,
 	if: ifPlugin,
-	fs: fs,
+	htmlbeautify: htmlbeautify,
+	deleteAsync: deleteAsync,
 };

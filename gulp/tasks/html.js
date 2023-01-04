@@ -1,7 +1,6 @@
 import fileInclude from "gulp-file-include";
 import versionNumber from "gulp-version-number";
 import webpHtmlNosvg from "gulp-webp-html-nosvg"; // Оборачивает img в picture и добавляет source webp
-import htmlbeautify from "gulp-html-beautify";
 
 export const html = () => {
 	return (
@@ -37,7 +36,7 @@ export const html = () => {
 			// .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
 
 			.pipe(
-				htmlbeautify({
+				app.plugins.htmlbeautify({
 					indent_with_tabs: true,
 					indent_size: 2,
 				})

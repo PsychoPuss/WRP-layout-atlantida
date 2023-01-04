@@ -3,3 +3,4 @@ build
 gulp/version.json
 .octagon_src
 .vscode
+*.zip
