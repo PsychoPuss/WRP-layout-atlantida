@@ -27,6 +27,7 @@
 		"gulp-webpcss": "^1.1.1",
 		"gulp-zip": "^5.1.0",
 		"isotope-layout": "^3.0.6",
+		"lc-select": "^1.1.7",
 		"node-sass-tilde-importer": "^1.0.2",
 		"nouislider": "^15.6.1",
 		"sass": "^1.56.2",

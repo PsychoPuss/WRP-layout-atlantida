@@ -50,21 +50,6 @@ export function careersTop() {
 	careersTopOffset();
 }
 
-export function formSelectInit() {
-	const contactsSelectSimple = new lc_select('select[name="title"], select[name="request_callback"], select[name="discover"]', {
-		wrap_width: "100%",
-		pre_placeh_opt: true,
-		enable_search: false,
-	});
-
-	const contactsSelectMultiple = new lc_select('select[name="site"], select[name="location"]', {
-		wrap_width: "100%",
-		pre_placeh_opt: true,
-		enable_search: false,
-		// max_opts : 3,
-	});
-}
-
 export function toggleTab() {
 	const tabButtons = document.querySelectorAll(".btn.btn_tab"),
 		headersAll = document.querySelectorAll(`.tabs-header .tab`),
